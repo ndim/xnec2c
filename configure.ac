@@ -37,6 +37,8 @@ dnl 2018-04-06 glib2-2.56.1     available in centos 7
 dnl
 dnl ======================================================================
 
+AM_SILENT_RULES
+
 # AC_CANONICAL_HOST is needed to access the 'host_os' variable
 AC_CANONICAL_HOST
 

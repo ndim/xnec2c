@@ -102,6 +102,7 @@ man1_MANS     += doc/xnec2c.1
 SUFFIXES += .1.in .1
 .1.in.1:
 	@$(MKDIR_P) $(@D)
+	@if $(AM_V_P); then set -x; else printf "  %-8s $@\n" "SED"; fi; \
 	$(SED) $(SED_CMDS) < $< > $@
 
 dist_doc_DATA  =
@@ -441,6 +442,7 @@ noinst_DATA += xnec2c.spec
 SUFFIXES += .spec.in .spec
 .spec.in.spec:
 	@$(MKDIR_P) $(@D)
+	@if $(AM_V_P); then set -x; else printf "  %-8s $@\n" "SED"; fi; \
 	$(SED) $(SED_CMDS) < $< > $@
 
 
