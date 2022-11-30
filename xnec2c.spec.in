@@ -1,6 +1,6 @@
 Name:           @PACKAGE_TARNAME@
 Version:        @PACKAGE_VERSION@
-Release:        1%{?dist}
+Release:        @RPM_RELEASE@%{?dist}
 Summary:        A multi-threaded EM tool to model antenna near- and far-field radiation patterns.
 
 License:        GPLv2+
@@ -160,6 +160,10 @@ update-desktop-database &> /dev/null || :
 
 
 %changelog
+* @RPM_CHANGELOG_DATE@ Hans Ulrich Niedermann <hun@n-dimensional.de> - @PACKAGE_VERSION@-@RPM_RELEASE@
+- Use dist tarball instead of autotools
+- Enable test builds of RPM packages from source tree
+
 * Sat Mar 19 2022 Eric Wheeler, KJ7LNW <xnec2c-bugs@z.ewheeler.org> - 4.4.10-1
 - Rebuilt based on xnec2c.org
 
