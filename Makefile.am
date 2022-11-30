@@ -444,14 +444,19 @@ SUFFIXES += .spec.in .spec
 	@$(MKDIR_P) $(@D)
 	$(SED) $(SED_CMDS) < $< > $@
 
-if HAVE_PROG_RPMBUILD
+SPECFILE = $(PACKAGE_TARNAME).spec
 
-RPMBUILD = rpmbuild
+if HAVE_PROG_RPMLINT
+check-hook: rpmlint-spec
+rpmlint: rpmlint-spec
+rpmlint-spec: $(SPECFILE)
+	$(RPMLINT) $(SPECFILE)
+endif # HAVE_PROG_RPMLINT
+
+if HAVE_PROG_RPMBUILD
 
 RPM_RELEASE = 1
 SED_CMDS += -e 's|[@]RPM_RELEASE@|$(RPM_RELEASE)|g'
-
-SPECFILE = $(PACKAGE_TARNAME).spec
 
 PACKAGE_SRPM = $(PACKAGE_TARNAME)-$(PACKAGE_VERSION)-$(RPM_RELEASE).src.rpm
 
@@ -465,6 +470,12 @@ SRPM_RPMBUILD_OPTS += --define "_srcrpmdir $${PWD}"
 srpm: $(PACKAGE_SRPM)
 $(PACKAGE_SRPM): dist $(SPECFILE)
 	$(RPMBUILD) $(SRPM_RPMBUILD_OPTS) -bs $(SPECFILE)
+
+if HAVE_PROG_RPMLINT
+rpmlint: rpmlint-srpm
+rpmlint-srpm: $(PACKAGE_SRPM)
+	$(RPMLINT) $(PACKAGE_SRPM)
+endif # HAVE_PROG_RPMLINT
 
 if HAVE_PROG_MOCK
 

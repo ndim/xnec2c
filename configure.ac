@@ -139,6 +139,7 @@ AS_VAR_IF([xnc2c_gcr_links], [no], [dnl
 
 dnl for building test rpms
 XN_CHECK_PROG([RPMBUILD], [rpmbuild], [package build tool])
+XN_CHECK_PROG([RPMLINT],  [rpmlint],  [rpm package linting tool])
 XN_CHECK_PROG([MOCK],     [mock],     [chroot based package building tool])
 
 
