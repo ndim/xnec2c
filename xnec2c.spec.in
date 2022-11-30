@@ -1,7 +1,7 @@
 Name:           @PACKAGE_TARNAME@
 Version:        @PACKAGE_VERSION@
 Release:        @RPM_RELEASE@%{?dist}
-Summary:        A multi-threaded EM tool to model antenna near- and far-field radiation patterns.
+Summary:        EM tool to model antenna near- and far-field radiation patterns
 
 License:        GPLv2+
 URL:            https://www.xnec2c.org/
