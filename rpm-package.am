@@ -1,13 +1,11 @@
-SPECFILE = $(PACKAGE_TARNAME).spec
-
-if HAVE_PROG_RPMLINT
-check-hook: rpmlint-spec
-rpmlint: rpmlint-spec
-rpmlint-spec: $(SPECFILE)
-	$(RPMLINT) $(SPECFILE)
-endif # HAVE_PROG_RPMLINT
+RPMLINT_FILES =
 
 if HAVE_PROG_RPMBUILD
+
+
+
+SPECFILE = $(PACKAGE_TARNAME).spec
+RPMLINT_FILES += $(SPECFILE)
 
 RPM_RELEASE = 1
 SED_CMDS += -e 's|[@]RPM_RELEASE@|$(RPM_RELEASE)|g'
@@ -22,18 +20,34 @@ SRPM_RPMBUILD_OPTS += --define "_sourcedir $${PWD}"
 SRPM_RPMBUILD_OPTS += --define "_srcrpmdir $${PWD}"
 
 srpm: $(PACKAGE_SRPM)
-$(PACKAGE_SRPM): dist $(SPECFILE)
+$(PACKAGE_SRPM): dist-gzip $(SPECFILE)
 	$(RPMBUILD) $(SRPM_RPMBUILD_OPTS) -bs $(SPECFILE)
 
-if HAVE_PROG_RPMLINT
-rpmlint: rpmlint-srpm
-rpmlint-srpm: $(PACKAGE_SRPM)
-	$(RPMLINT) $(PACKAGE_SRPM)
-endif # HAVE_PROG_RPMLINT
+RPMLINT_FILES += $(PACKAGE_SRPM)
+
+RPM_RPMBUILD_OPTS =
+RPM_RPMBUILD_OPTS += --define 'dist %{nil}'
+RPM_RPMBUILD_OPTS += --define "_sourcedir $${PWD}"
+RPM_RPMBUILD_OPTS += --define "_builddir  $${PWD}/rpm-build"
+RPM_RPMBUILD_OPTS += --define "_rpmdir    $${PWD}/rpm-dist"
+
+PACKAGE_RPM = rpm-dist/$(RPM_ARCH)/$(PACKAGE_TARNAME)-$(PACKAGE_VERSION)-$(RPM_RELEASE).$(RPM_ARCH).rpm
+rpm: $(PACKAGE_RPM)
+$(PACKAGE_RPM): $(PACKAGE_SRPM)
+	$(RPMBUILD) $(RPM_RPMBUILD_OPTS) --rebuild $(PACKAGE_SRPM)
+
+clean-local: clean-rpm
+clean-rpm:
+	rm -rf rpm-build rpm-dist
+
+RPMLINT_FILES += $(PACKAGE_RPM)
+
+
+########################################################################
+# mock
+########################################################################
 
 if HAVE_PROG_MOCK
-
-MOCK = mock
 
 MOCK_OPTS  =
 MOCK_OPTS += --resultdir=$(PWD)/results_$(PACKAGE_TARNAME)/$(PACKAGE_VERSION)/$(RPM_RELEASE)
@@ -41,6 +55,24 @@ MOCK_OPTS += --resultdir=$(PWD)/results_$(PACKAGE_TARNAME)/$(PACKAGE_VERSION)/$(
 mockbuild: $(PACKAGE_SRPM)
 	$(MOCK) $(MOCK_OPTS) --rebuild $(PACKAGE_SRPM)
 
+clean-local: clean-mock
+clean-mock:
+	rm -rf results_$(PACKAGE_TARNAME)
+
 endif # HAVE_PROG_MOCK
+
+
+########################################################################
+# rpmlint
+########################################################################
+
+RPMLINT_FLAGS  =
+# RPMLINT_FLAGS += --strict
+
+if HAVE_PROG_RPMLINT
+rpmlint: $(RPMLINT_FILES)
+	$(RPMLINT) $(RPMLINT_FLAGS) $(RPMLINT_FILES)
+endif # HAVE_PROG_RPMLINT
+
 
 endif # HAVE_PROG_RPMBUILD

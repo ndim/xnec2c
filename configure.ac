@@ -142,6 +142,9 @@ XN_CHECK_PROG([RPMBUILD], [rpmbuild], [package build tool])
 XN_CHECK_PROG([RPMLINT],  [rpmlint],  [rpm package linting tool])
 XN_CHECK_PROG([MOCK],     [mock],     [chroot based package building tool])
 
+RPM_ARCH=`$RPMBUILD --eval '%{_target_cpu}'`
+AC_SUBST([RPM_ARCH])
+
 
 # Checks for libraries.
 m4_pattern_forbid([PKG_CHECK_MODULES])dnl
