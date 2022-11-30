@@ -10,14 +10,14 @@ URL:            https://www.xnec2c.org/
 # Source0:        https://www.xnec2c.org/releases/%%{name}-v%%{version}.tar.gz
 Source0:        https://github.com/KJ7LNW/xnec2c/archive/v%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires:  autoconf
-BuildRequires:  automake
+# BuildRequires:  autoconf
+# BuildRequires:  automake
 BuildRequires:  desktop-file-utils
 BuildRequires:  gcc
-BuildRequires:  gettext-devel
+# BuildRequires:  gettext-devel
 BuildRequires:  glib2-devel
 BuildRequires:  gtk3-devel
-BuildRequires:  intltool
+# BuildRequires:  intltool
 BuildRequires:  libtool
 BuildRequires:  make
 
@@ -63,7 +63,7 @@ features:
 
 
 %build
-./autogen.sh
+# autoreconf -vis .
 %configure
 %make_build CFLAGS="%{optflags}" %{?_smp_mflags}
 
