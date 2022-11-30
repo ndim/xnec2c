@@ -1,4 +1,5 @@
 RPMLINT_FILES =
+CLEAN_TARGETS =
 
 if HAVE_PROG_RPMBUILD
 
@@ -19,6 +20,7 @@ SRPM_RPMBUILD_OPTS += --define 'dist %{nil}'
 SRPM_RPMBUILD_OPTS += --define "_sourcedir $${PWD}"
 SRPM_RPMBUILD_OPTS += --define "_srcrpmdir $${PWD}"
 
+CLEANFILES += $(PACKAGE_SRPM)
 srpm: $(PACKAGE_SRPM)
 $(PACKAGE_SRPM): dist-gzip $(SPECFILE)
 	$(RPMBUILD) $(SRPM_RPMBUILD_OPTS) -bs $(SPECFILE)
@@ -36,7 +38,7 @@ rpm: $(PACKAGE_RPM)
 $(PACKAGE_RPM): $(PACKAGE_SRPM)
 	$(RPMBUILD) $(RPM_RPMBUILD_OPTS) --rebuild $(PACKAGE_SRPM)
 
-clean-local: clean-rpm
+CLEAN_TARGETS += clean-rpm
 clean-rpm:
 	rm -rf rpm-build rpm-dist
 
@@ -55,7 +57,7 @@ MOCK_OPTS += --resultdir=$(PWD)/results_$(PACKAGE_TARNAME)/$(PACKAGE_VERSION)/$(
 mockbuild: $(PACKAGE_SRPM)
 	$(MOCK) $(MOCK_OPTS) --rebuild $(PACKAGE_SRPM)
 
-clean-local: clean-mock
+CLEAN_TARGETS += clean-mock
 clean-mock:
 	rm -rf results_$(PACKAGE_TARNAME)
 
@@ -76,3 +78,10 @@ endif # HAVE_PROG_RPMLINT
 
 
 endif # HAVE_PROG_RPMBUILD
+
+
+########################################################################
+# cleanups
+########################################################################
+
+clean-local: $(CLEAN_TARGETS)
