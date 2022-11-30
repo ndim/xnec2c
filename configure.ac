@@ -136,6 +136,12 @@ AS_VAR_IF([xnc2c_gcr_links], [no], [dnl
   AC_MSG_FAILURE([glib-compile-resources result must compile and link])
 ])
 
+
+dnl for building test rpms
+XN_CHECK_PROG([RPMBUILD], [rpmbuild], [package build tool])
+XN_CHECK_PROG([MOCK],     [mock],     [chroot based package building tool])
+
+
 # Checks for libraries.
 m4_pattern_forbid([PKG_CHECK_MODULES])dnl
 PKG_CHECK_MODULES([GMODULE], [gmodule-2.0])

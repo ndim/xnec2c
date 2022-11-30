@@ -23,6 +23,7 @@ EXTRA_DIST += PACKAGING
 
 EXTRA_DIST += m4-include/ax_check_compile_flag.m4
 EXTRA_DIST += m4-include/pkg.m4
+EXTRA_DIST += m4-include/xn-check-prog.m4
 
 EXTRA_DIST += resources/link.svg
 EXTRA_DIST += resources/unlink.svg
@@ -442,6 +443,38 @@ SUFFIXES += .spec.in .spec
 .spec.in.spec:
 	@$(MKDIR_P) $(@D)
 	$(SED) $(SED_CMDS) < $< > $@
+
+if HAVE_PROG_RPMBUILD
+
+RPMBUILD = rpmbuild
+
+RPM_RELEASE = 1
+SPECFILE = $(PACKAGE_TARNAME).spec
+
+PACKAGE_SRPM = $(PACKAGE_TARNAME)-$(PACKAGE_VERSION)-$(RPM_RELEASE).src.rpm
+
+SRPM_RPMBUILD_OPTS =
+SRPM_RPMBUILD_OPTS += --define 'dist %{nil}'
+SRPM_RPMBUILD_OPTS += --define "_sourcedir $${PWD}"
+SRPM_RPMBUILD_OPTS += --define "_srcrpmdir $${PWD}"
+
+srpm: $(PACKAGE_SRPM)
+$(PACKAGE_SRPM): dist $(SPECFILE)
+	$(RPMBUILD) $(SRPM_RPMBUILD_OPTS) -bs $(SPECFILE)
+
+if HAVE_PROG_MOCK
+
+MOCK = mock
+
+MOCK_OPTS  =
+MOCK_OPTS += --resultdir=$(PWD)/results_$(PACKAGE_TARNAME)/$(PACKAGE_VERSION)/$(RPM_RELEASE)
+
+mockbuild: $(PACKAGE_SRPM)
+	$(MOCK) $(MOCK_OPTS) --rebuild $(PACKAGE_SRPM)
+
+endif # HAVE_PROG_MOCK
+
+endif # HAVE_PROG_RPMBUILD
 
 
 ########################################################################
