@@ -49,17 +49,17 @@ Linux and UNIX operating systems. The original FORTRAN version of NEC2
 was ported to C by Neoklis Kyriazis, 5B4AZ and released as nec2c. Later
 he wrote xnec2c, a graphical interface for ease of use with many more
 features:
-	Multi-threading operation on SMP machines
-	On-demand Calculation
-	Built-in NEC2 input file editor
-	Accelerated Linear Algebra Support
-	Interactive Operation
-	User Interface
-	Color Coding
-	and much more.
+    Multi-threading operation on SMP machines
+    On-demand Calculation
+    Built-in NEC2 input file editor
+    Accelerated Linear Algebra Support
+    Interactive Operation
+    User Interface
+    Color Coding
+    and much more.
 
 %prep
-%setup
+%setup -q
 
 
 %build
@@ -79,7 +79,7 @@ desktop-file-install --vendor="" \
 # Note /usr/share/pixmap/xnec2c.svg is needed for the icon to show in el7.
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
 install -pm 644 resources/xnec2c.svg \
-	%{buildroot}%{_datadir}/icons/hicolor/scalable/apps/
+        %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/
 
 # Remove symlink
 rm -f %{buildroot}%{_datadir}/%{name}/doc
@@ -107,10 +107,10 @@ features.
     </p>
   </description>
   <categories>
-  	<category>Electronics</category>
-  	<category>Science</category>
-  	<category>Math</category>
-  	<category>NumericalAnalysis</category>
+    <category>Electronics</category>
+    <category>Science</category>
+    <category>Math</category>
+    <category>NumericalAnalysis</category>
   </categories>
   <screenshots>
     <screenshot type="default">
