@@ -11,6 +11,10 @@ top_builddir = ..
 #
 # _() and N_() are standard for string literals in C code
 #
+# --add-comments=TAG Helps translators by giving them context for
+#     translating a message in the form of copying the last code
+#     comment before the string to be translated
+#
 # The others are xnec2c specific.
 XGETTEXT_OPTIONS = --from-code=UTF-8 --keyword=_ --keyword=N_ \
 	--keyword=Notice:1,2 \
@@ -23,7 +27,8 @@ XGETTEXT_OPTIONS = --from-code=UTF-8 --keyword=_ --keyword=N_ \
 	--keyword=pr_warn:1 \
 	--keyword=pr_notice:1 \
 	--keyword=pr_info:1 \
-	--keyword=pr_debug:1
+	--keyword=pr_debug:1 \
+	--add-comments=TRANSLATORS
 
 # This is the copyright holder that gets inserted into the header of the
 # $(DOMAIN).pot file.  Set this to the copyright holder of the surrounding
