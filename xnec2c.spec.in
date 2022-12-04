@@ -1,3 +1,6 @@
+%bcond_with autoreconf
+
+
 Name:           @PACKAGE_TARNAME@
 Version:        @PACKAGE_VERSION@
 Release:        @RPM_RELEASE@%{?dist}
@@ -14,15 +17,15 @@ Source0:        %{name}-%{version}.tar.gz
 # Source0:        https://www.xnec2c.org/releases/%%{name}-v%%{version}.tar.gz
 # Source0:        https://github.com/KJ7LNW/xnec2c/archive/v%%{version}/%%{name}-%%{version}.tar.gz
 
-# BuildRequires:  autoconf
-# BuildRequires:  automake
+# BuildReqs for {with autoreconf}
+BuildRequires:  autoconf
+BuildRequires:  automake
+BuildRequires:  gettext-devel
+
 BuildRequires:  desktop-file-utils
 BuildRequires:  gcc
-# BuildRequires:  gettext-devel
 BuildRequires:  glib2-devel
 BuildRequires:  gtk3-devel
-# BuildRequires:  intltool
-BuildRequires:  libtool
 BuildRequires:  make
 
 # These should all be autodetected by RPM
@@ -68,7 +71,9 @@ features:
 
 
 %build
-# autoreconf -vis .
+%if %{with autoreconf}
+autoreconf -vis .
+%endif
 %configure
 %make_build CFLAGS="%{optflags}" %{?_smp_mflags}
 
