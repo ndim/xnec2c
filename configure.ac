@@ -237,6 +237,8 @@ AM_GNU_GETTEXT_VERSION([0.19.7])
 AM_GNU_GETTEXT([external])
 AM_ICONV()
 
+AM_CONDITIONAL([HAVE_PROG_MSGFMT], [test "x$MSGFMT" != "x:"])
+
 # Checks for header files.
 AC_CHECK_HEADERS([ctype.h gdk/gdkkeysyms.h complex.h stdio.h signal.h\
                   math.h stdlib.h unistd.h string.h fcntl.h time.h\

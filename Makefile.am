@@ -6,7 +6,7 @@ SUFFIXES =
 man1_MANS =
 noinst_DATA =
 
-SUBDIRS = src po
+SUBDIRS = . src po
 
 EXTRA_DIST += autogen.sh
 
@@ -39,11 +39,41 @@ SED_CMDS += -e 's|[@]PACKAGE_VERSION@|$(PACKAGE_VERSION)|g'
 # Desktop integration
 ########################################################################
 
-applicationsdir        = $(datarootdir)/applications
-dist_applications_DATA = files/xnec2c.desktop
+applicationsdir    = $(datarootdir)/applications
 
-appiconsdir            = $(datarootdir)/icons/hicolor/256x256/apps
-dist_appicons_DATA     = files/xnec2c.png
+EXTRA_DIST        += files/xnec2c.desktop.in
+CLEANFILES        += files/xnec2c.desktop
+applications_DATA  = files/xnec2c.desktop
+
+# Note that we cannot depend on the $(POFILES) from po/Makefile.in.in
+# and therefore do not have all of the dependencies for
+# files/xnec2c.desktop. Therefore we have a phony update-desktop
+# target which can be used by the user when they know the *.po files
+# have changed, or after the update-po target has just updated the po
+# files.
+#
+# Note that if there is no msgfmt available, we at least use an
+# untranslated desktop file.
+
+files/xnec2c.desktop: files/xnec2c.desktop.in
+	@$(MAKE) $(AM_MAKEFLAGS) update-desktop
+
+if HAVE_PROG_MSGFMT
+
+update-desktop:
+	@$(MKDIR_P) files
+	$(MSGFMT) --desktop --template $(srcdir)/files/xnec2c.desktop.in -d $(top_srcdir)/po -o files/xnec2c.desktop
+
+else
+
+update-desktop:
+	@$(MKDIR_P) files
+	cat < $(srcdir)/files/xnec2c.desktop.in > files/xnec2c.desktop
+
+endif
+
+appiconsdir        = $(datarootdir)/icons/hicolor/256x256/apps
+dist_appicons_DATA = files/xnec2c.png
 
 mimepackagesdir        = $(datarootdir)/mime/packages/
 dist_mimepackages_DATA = files/x-nec2.xml
@@ -368,4 +398,5 @@ SUFFIXES += .spec.in .spec
 ########################################################################
 
 update-po:
-	cd po && $(MAKE) $(AM_MAKEFLAGS) update-po
+	@cd po && $(MAKE) $(AM_MAKEFLAGS) update-po
+	@$(MAKE) $(AM_MAKEFLAGS) update-desktop
