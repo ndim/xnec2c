@@ -25,13 +25,14 @@ BuildRequires:  gtk3-devel
 BuildRequires:  libtool
 BuildRequires:  make
 
-Requires: gtk3
-Requires: cairo
-Requires: pango
-Requires: freetype
-Requires: pixman
-Requires: gdk-pixbuf2
-Requires: libpng
+# These should all be autodetected by RPM
+# Requires: gtk3
+# Requires: cairo
+# Requires: pango
+# Requires: freetype
+# Requires: pixman
+# Requires: gdk-pixbuf2
+# Requires: libpng
 
 # For BLAS acceleration.  Really these are suggested, but strongly
 # recommended for performance.  xnec2c detects available BLAS
