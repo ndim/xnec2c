@@ -68,9 +68,11 @@ xnec2c_CFLAGS   += -DGSEAL_ENABLE
 xnec2c_CFLAGS   += -DGDK_PIXBUF_DISABLE_DEPRECATED
 xnec2c_CFLAGS   += -DG_DISABLE_DEPRECATED
 
-xnec2c_CPPFLAGS += -DPROGRAMNAME_LOCALEDIR="\"$(PROGRAMNAME_LOCALEDIR)\""
-xnec2c_CPPFLAGS += -DPACKAGE_DATA_DIR="\"$(pkgdata)\""
-xnec2c_CPPFLAGS += -DPACKAGE_LOCALE_DIR="\"$(prefix)/$(DATADIRNAME)/locale\""
+xnec2c_CPPFLAGS += -DLOCALEDIR="\"$(localedir)\""
+
+# Uncomment this if xnec2c ever needs access to data files beyond the
+# glib resources compiled and linked into the executable.
+# xnec2c_CPPFLAGS += -DPKGDATADIR="\"$(pkgdatadir)\""
 
 xnec2c_CPPFLAGS += $(GMODULE_CFLAGS)
 xnec2c_LDADD    += $(GMODULE_LIBS)
@@ -79,6 +81,7 @@ xnec2c_CPPFLAGS += $(GTK_CFLAGS)
 xnec2c_LDADD    += $(GTK_LIBS)
 
 xnec2c_LDADD    += $(INTLLIBS)
+xnec2c_LDADD    += $(LIBICONV)
 
 
 ########################################################################

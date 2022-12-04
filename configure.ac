@@ -232,16 +232,10 @@ AX_CHECK_COMPILE_FLAG([-fno-math-errno],
                       [CFLAGS="$CFLAGS -fno-math-errno"])
 
 # Internationalization tools
+AM_PO_SUBDIRS()
 AM_GNU_GETTEXT_VERSION([0.19.7])
-GETTEXT_PACKAGE="xnec2c"
-AC_SUBST([GETTEXT_PACKAGE])
-AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], ["$GETTEXT_PACKAGE"], [Gettext package.])
 AM_GNU_GETTEXT([external])
-PROGRAMNAME_LOCALEDIR="${datadir}/locale"
-AC_SUBST([PROGRAMNAME_LOCALEDIR])
-
-# Add the languages which your application supports here.
-ALL_LINGUAS=""
+AM_ICONV()
 
 # Checks for header files.
 AC_CHECK_HEADERS([ctype.h gdk/gdkkeysyms.h complex.h stdio.h signal.h\
