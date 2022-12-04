@@ -1,4 +1,5 @@
 # List of source files containing translatable strings.
+resources/xnec2c.glade
 src/calculations.c
 src/callback_func.c
 src/callbacks.c
@@ -29,5 +30,3 @@ src/shared.c
 src/somnec.c
 src/utils.c
 src/xnec2c.c
-resources/xnec2c.glade
-
