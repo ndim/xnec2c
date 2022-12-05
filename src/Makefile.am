@@ -82,6 +82,7 @@ xnec2c_LDADD    += $(GTK_LIBS)
 
 xnec2c_LDADD    += $(INTLLIBS)
 xnec2c_LDADD    += $(LIBICONV)
+xnec2c_SOURCES  += i18n.h
 
 
 ########################################################################

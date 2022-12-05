@@ -3,6 +3,7 @@
 CLEANFILES =
 EXTRA_DIST =
 SUFFIXES =
+check_PROGRAMS =
 man1_MANS =
 noinst_DATA =
 
@@ -377,6 +378,56 @@ check-examples-file-list:
 	  exit 1; \
 	fi
 	@rm -f examples-automake.lst examples-srcdir.lst
+
+
+########################################################################
+# Testing
+########################################################################
+
+INSTALL_TESTS  =
+TESTS          =
+
+# Translations only work after "make install" has created a
+# $(localedir)/$(LOCALE)/LC_MESSAGES/$(PACKAGE).mo directory
+# structure, so we can only test translations in the "installcheck"
+# target.
+# TESTS += t/i18n-test
+INSTALL_TESTS += t/i18n-test
+check_PROGRAMS       += t/i18n-test
+t_i18n_test_SOURCES   = t/i18n-test.c
+t_i18n_test_CPPFLAGS  =
+t_i18n_test_CPPFLAGS += -I$(srcdir)/src
+t_i18n_test_CPPFLAGS += -DLOCALEDIR="\"$(localedir)\""
+t_i18n_test_CFLAGS    = -O2 -g
+t_i18n_test_CFLAGS   += -std=c11 -pedantic
+t_i18n_test_CFLAGS   += -Wall -Wextra -Werror
+t_i18n_test_LDADD     =
+t_i18n_test_LDADD    += $(INTLLIBS)
+t_i18n_test_LDADD    += $(LIBICONV)
+
+installcheck-local: $(INSTALL_TESTS) $(check_PROGRAMS)
+	@count_PASS=0; count_SKIP=0; count_FAIL=0; \
+	trap 'rm -f stderrout' EXIT; \
+	for t in $(INSTALL_TESTS); do \
+	  "$$t" >stderrout 2>&1; \
+	  s="$$?"; \
+	  if test "x$$s" = x0; then \
+	    echo "#> PASS  $$t"; \
+	    count_PASS=`expr $$count_PASS + 1`; \
+	  elif test "x$$s" = x77; then \
+	    echo "#> SKIP $$t"; \
+	    count_SKIP=`expr $$count_SKIP + 1`; \
+	  else \
+	    echo "#> FAIL $$t"; \
+	    count_FAIL=`expr $$count_FAIL + 1`; \
+	    cat stderrout; \
+	  fi; \
+	done; \
+	echo "# installcheck-local summary:"; \
+	echo "#   PASS: $$count_PASS"; \
+	echo "#   SKIP: $$count_SKIP"; \
+	echo "#   FAIL: $$count_FAIL"; \
+	if test "$$count_FAIL" -gt 0; then exit 1; fi
 
 
 ########################################################################

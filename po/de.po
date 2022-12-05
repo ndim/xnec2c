@@ -3478,3 +3478,10 @@ msgstr ""
 #: src/xnec2c.c:1019
 msgid "failed to start Frequency_Loop_Thread\n"
 msgstr ""
+
+#. TRANSLATORS: This is just the abstract word "yes" to test the
+#. * translation framework with a few selected locales like C,
+#. * en_US.UTF-8, de_DE.UTF-8.
+#: t/i18n-test.c:16
+msgid "yes"
+msgstr "ja"

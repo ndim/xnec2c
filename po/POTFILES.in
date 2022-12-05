@@ -31,3 +31,4 @@ src/shared.c
 src/somnec.c
 src/utils.c
 src/xnec2c.c
+t/i18n-test.c
