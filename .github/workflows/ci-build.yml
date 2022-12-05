@@ -1,0 +1,91 @@
+name: CI build
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  schedule:
+    - cron: '47 05 * * 3'
+
+env:
+  LC_ALL: C
+
+jobs:
+  ix-build:
+
+    name: ${{ matrix.os }}
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: true
+      matrix:
+        os: [ ubuntu-latest, macos-latest ]
+
+    steps:
+      - name: Check out source code with history (Linux)
+        if: runner.os == 'Linux'
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Check out source code without history (non-Linux)
+        if: runner.os != 'Linux'
+        uses: actions/checkout@v3
+
+      - name: Install Software (Linux)
+        if: runner.os == 'Linux'
+        run: sudo apt install automake autoconf autopoint gettext libgtk-3-dev
+
+      - name: Install Software (macOS)
+        if: runner.os == 'macOS'
+        run: brew install automake autoconf gettext libtool glib gtk+3
+
+      - name: Generate locale
+        if: runner.os == 'Linux'
+        run: sudo locale-gen de_DE.UTF-8
+
+      # Setting MAKE would interfere with Makefile{,.in,.am} using $(MAKE)
+      - name: 'Prepare concurrent MAKE'
+        run: |-
+          case "${{ runner.os }}" in
+            Linux)
+              NPROC="$(nproc)"
+              echo "NPROC=$NPROC" >> $GITHUB_ENV
+              ;;
+            macOS)
+              NPROC="$(sysctl -n hw.logicalcpu)"
+              echo "NPROC=$NPROC" >> $GITHUB_ENV
+              ;;
+          esac
+          if test "x$NPROC" = x; then
+            echo ci_MAKE="make" >> $GITHUB_ENV;
+            echo "NPROC is not set"
+          else
+            echo ci_MAKE="make -j${NPROC} -l${NPROC}" >> $GITHUB_ENV
+          fi
+
+      - name: autoreconf
+        run: autoreconf -vis .
+
+      - name: configure
+        run: ./configure --prefix="$PWD/__prefix"
+
+      - name: make
+        run: $ci_MAKE
+
+      - name: make check
+        run: $ci_MAKE check
+
+      - name: make install
+        run: $ci_MAKE install
+
+      - name: List Installed Files
+        run: cd "$PWD/__prefix" && find . -type f | sort
+
+      - name: make installcheck
+        run: $ci_MAKE installcheck
+
+      - name: make distcheck
+        run: $ci_MAKE distcheck

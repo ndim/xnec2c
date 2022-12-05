@@ -1,0 +1,3487 @@
+# German translations for the xnec2c package.
+# Copyright (C) 2022 Neoklis Kyriazis nkcyham@yahoo.com
+# This file is distributed under the same license as the xnec2c package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xnec2c 4.4.12\n"
+"Report-Msgid-Bugs-To: xnec2c-lang-bugs@z.ewheeler.org\n"
+"POT-Creation-Date: 2022-12-05 09:27+0100\n"
+"PO-Revision-Date: 2022-12-05 03:58+0100\n"
+"Last-Translator: Hans Ulrich Niedermann <hun@n-dimensional.de>\n"
+"Language-Team: Deutsch\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: files/xnec2c.desktop.in:3
+msgid "Xnec2c"
+msgstr ""
+
+#: files/xnec2c.desktop.in:4
+msgid "NEC2 Simulator"
+msgstr "NEC2-Simulator"
+
+#: files/xnec2c.desktop.in:5
+msgid "Numerical Electromagnetics Code software"
+msgstr ""
+
+#: files/xnec2c.desktop.in:11
+msgid "nec2;em;simulator;"
+msgstr ""
+
+#: resources/xnec2c.glade:14
+msgid "(C) 2007-2022 Neoklis Kyriazis"
+msgstr ""
+
+#: resources/xnec2c.glade:15
+msgid ""
+"xnec2c is an interactive graphical wrapper around a modified version of "
+"nec2c, which is itself a translation to C of the original FORTRAN NEC2 "
+"Numerical Electromagnetics Code.\n"
+"\n"
+"xnec2c can display frequency-dependent data (gain, input impedance, vswr "
+"etc) in a graphical format. It can also display radiation pattern data in a "
+"rotatable wire frame format and near-field (E, H, S vectors) in a grid "
+"format.\n"
+"\n"
+"xnec2c has a built-in NEC2 input file editor that makes it easier to create "
+"or edit antenna description files and specify NEC2 commands.\n"
+"\n"
+"PLEASE read the documentation in the doc/ sub-directory as xnec2c is not "
+"fully compatible with NEC2 input files and it works in different ways!"
+msgstr ""
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: resources/xnec2c.glade:27
+msgid "translator-credits"
+msgstr ""
+
+#: resources/xnec2c.glade:69
+msgid "Near Field Animation"
+msgstr ""
+
+#: resources/xnec2c.glade:159
+msgid "Steps/Cycle"
+msgstr ""
+
+#: resources/xnec2c.glade:172
+msgid "Animate Freq (Hz)"
+msgstr ""
+
+#: resources/xnec2c.glade:286
+msgid "Arc Element (GA card)"
+msgstr ""
+
+#: resources/xnec2c.glade:314 resources/xnec2c.glade:1349
+#: resources/xnec2c.glade:3776 resources/xnec2c.glade:14124 src/cmnd_edit.c:434
+msgid "Tag Number"
+msgstr ""
+
+#: resources/xnec2c.glade:327 resources/xnec2c.glade:14219
+msgid "No. Segments"
+msgstr ""
+
+#: resources/xnec2c.glade:340 resources/xnec2c.glade:3802
+#: resources/xnec2c.glade:14315
+msgid "Segs % lambda"
+msgstr ""
+
+#: resources/xnec2c.glade:353 resources/xnec2c.glade:3815
+#: resources/xnec2c.glade:14411
+msgid "Wire Diameter"
+msgstr ""
+
+#: resources/xnec2c.glade:441
+msgid "Radius from Y"
+msgstr ""
+
+#: resources/xnec2c.glade:454
+msgid "End 1 Angle"
+msgstr ""
+
+#: resources/xnec2c.glade:467
+msgid "End 2 Angle"
+msgstr ""
+
+#: resources/xnec2c.glade:480 resources/xnec2c.glade:4012
+#: resources/xnec2c.glade:14476 src/cmnd_edit.c:1838
+msgid "Conductivity S/m"
+msgstr ""
+
+#: resources/xnec2c.glade:578
+msgid "Wire Arc Data"
+msgstr ""
+
+#: resources/xnec2c.glade:640 resources/xnec2c.glade:876
+#: resources/xnec2c.glade:1676 resources/xnec2c.glade:1899
+#: resources/xnec2c.glade:2357 resources/xnec2c.glade:2549
+#: resources/xnec2c.glade:2860 resources/xnec2c.glade:3546
+#: resources/xnec2c.glade:4346 resources/xnec2c.glade:4545
+#: resources/xnec2c.glade:4706 resources/xnec2c.glade:5238
+#: resources/xnec2c.glade:5874 resources/xnec2c.glade:7290
+#: resources/xnec2c.glade:8197 resources/xnec2c.glade:9203
+#: resources/xnec2c.glade:9476 resources/xnec2c.glade:12817
+#: resources/xnec2c.glade:13330 resources/xnec2c.glade:13929
+#: resources/xnec2c.glade:14765 resources/xnec2c.glade:14965
+msgid "Delete Card"
+msgstr ""
+
+#: resources/xnec2c.glade:718
+msgid "Cylindrical Structure (GR card)"
+msgstr ""
+
+#: resources/xnec2c.glade:748 resources/xnec2c.glade:9376
+msgid "Tag Number Increment"
+msgstr ""
+
+#: resources/xnec2c.glade:761
+msgid "Number of Structures"
+msgstr ""
+
+#: resources/xnec2c.glade:815
+msgid "Cylindrical Structure"
+msgstr ""
+
+#: resources/xnec2c.glade:941
+msgid "Xnec2c Error"
+msgstr ""
+
+#: resources/xnec2c.glade:1049
+msgid "Error"
+msgstr ""
+
+#: resources/xnec2c.glade:1128
+msgid "Excitation Command (EX Card)"
+msgstr ""
+
+#: resources/xnec2c.glade:1154
+msgid "Incident LH Wave"
+msgstr ""
+
+#: resources/xnec2c.glade:1170
+msgid "Incident Linear Wave "
+msgstr ""
+
+#: resources/xnec2c.glade:1186
+msgid "Current Source"
+msgstr ""
+
+#: resources/xnec2c.glade:1202
+msgid "Incident RH Wave"
+msgstr ""
+
+#: resources/xnec2c.glade:1218
+msgid "Current Slope Discontinuity"
+msgstr ""
+
+#: resources/xnec2c.glade:1234
+msgid "Voltage Source"
+msgstr ""
+
+#: resources/xnec2c.glade:1256
+msgid "Excitation Type"
+msgstr ""
+
+#: resources/xnec2c.glade:1281
+msgid "Maximum Admittance Matrix Asymmetry"
+msgstr ""
+
+#: resources/xnec2c.glade:1297
+msgid "Impedance of Source Segment"
+msgstr ""
+
+#: resources/xnec2c.glade:1319
+msgid "Print Control"
+msgstr ""
+
+#: resources/xnec2c.glade:1362 src/cmnd_edit.c:435
+msgid "Segment Number"
+msgstr ""
+
+#: resources/xnec2c.glade:1411
+msgid "Voltage - Real Part"
+msgstr ""
+
+#: resources/xnec2c.glade:1424
+msgid "Voltage - Imaginary Part"
+msgstr ""
+
+#: resources/xnec2c.glade:1437
+msgid "Eta"
+msgstr ""
+
+#: resources/xnec2c.glade:1507
+msgid "Theta"
+msgstr ""
+
+#: resources/xnec2c.glade:1520
+msgid "Phi"
+msgstr ""
+
+#: resources/xnec2c.glade:1533
+msgid "Ratio"
+msgstr ""
+
+#: resources/xnec2c.glade:1614
+msgid "Excitation Parameters"
+msgstr ""
+
+#: resources/xnec2c.glade:1741
+msgid "Execute Command (XQ Card)"
+msgstr ""
+
+#: resources/xnec2c.glade:1768
+msgid "No Pattern Cuts"
+msgstr ""
+
+#: resources/xnec2c.glade:1784
+msgid "Pattern in XZ Plane"
+msgstr ""
+
+#: resources/xnec2c.glade:1800
+msgid "Pattern in YZ Plane"
+msgstr ""
+
+#: resources/xnec2c.glade:1816
+msgid "Both XZ/YZ Patterns"
+msgstr ""
+
+#: resources/xnec2c.glade:1838
+msgid "Execute Command"
+msgstr ""
+
+#: resources/xnec2c.glade:1964
+msgid "xnec2c"
+msgstr ""
+
+#: resources/xnec2c.glade:2069
+msgid "Frequency Command (FR Card)"
+msgstr ""
+
+#: resources/xnec2c.glade:2094
+msgid "Additive Stepping"
+msgstr ""
+
+#: resources/xnec2c.glade:2111
+msgid "Multiplicative Stepping"
+msgstr ""
+
+#: resources/xnec2c.glade:2134
+msgid "Frequency Stepping"
+msgstr ""
+
+#: resources/xnec2c.glade:2164
+msgid "No. Frequency Points"
+msgstr ""
+
+#: resources/xnec2c.glade:2195
+msgid "Start Frequency (MHz)"
+msgstr ""
+
+#: resources/xnec2c.glade:2227
+msgid "Frequency Step (MHz)"
+msgstr ""
+
+#: resources/xnec2c.glade:2260
+msgid "End Frequency (MHz)"
+msgstr ""
+
+#: resources/xnec2c.glade:2296
+msgid "Frequency Stepping Parameters"
+msgstr ""
+
+#: resources/xnec2c.glade:2422
+msgid "Geometry End (GE Card)"
+msgstr ""
+
+#: resources/xnec2c.glade:2447
+msgid "No Ground, Free Space condition"
+msgstr ""
+
+#: resources/xnec2c.glade:2464
+msgid "Ground present, Structure reflection"
+msgstr ""
+
+#: resources/xnec2c.glade:2481
+msgid "Ground present, no Structure reflection"
+msgstr ""
+
+#: resources/xnec2c.glade:2504
+msgid "Ground Plane type"
+msgstr ""
+
+#: resources/xnec2c.glade:2638
+msgid "Ground Parameters (GD Card)"
+msgstr ""
+
+#: resources/xnec2c.glade:2667 resources/xnec2c.glade:3136
+#: resources/xnec2c.glade:3222
+msgid "Relative Dielectric Const."
+msgstr ""
+
+#: resources/xnec2c.glade:2699 resources/xnec2c.glade:3255
+msgid "Distance to 2nd Medium"
+msgstr ""
+
+#: resources/xnec2c.glade:2731 resources/xnec2c.glade:3168
+#: resources/xnec2c.glade:3287
+msgid "Ground Conductivity S/m"
+msgstr ""
+
+#: resources/xnec2c.glade:2763 resources/xnec2c.glade:3319
+msgid "Dist. below 1st Medium"
+msgstr ""
+
+#: resources/xnec2c.glade:2799 resources/xnec2c.glade:3355
+msgid "2nd Medium Parameters"
+msgstr ""
+
+#: resources/xnec2c.glade:2980
+msgid "Ground Parameters (GN & GD Cards)"
+msgstr ""
+
+#: resources/xnec2c.glade:3007
+msgid "Perfect Ground"
+msgstr ""
+
+#: resources/xnec2c.glade:3023
+msgid "Sommerfeld/Norton"
+msgstr ""
+
+#: resources/xnec2c.glade:3039
+msgid "Radial Ground Screen"
+msgstr ""
+
+#: resources/xnec2c.glade:3054
+msgid "Reflection Coeff. Approx"
+msgstr ""
+
+#: resources/xnec2c.glade:3070
+msgid "Nullify Previous Params"
+msgstr ""
+
+#: resources/xnec2c.glade:3086
+msgid "Second Medium (Cliff)"
+msgstr ""
+
+#: resources/xnec2c.glade:3107
+msgid "Ground Type"
+msgstr ""
+
+#: resources/xnec2c.glade:3235
+msgid "0.00000"
+msgstr ""
+
+#: resources/xnec2c.glade:3386
+msgid "Number of Radials"
+msgstr ""
+
+#: resources/xnec2c.glade:3399
+msgid "Radial Screen Radius"
+msgstr ""
+
+#: resources/xnec2c.glade:3449
+msgid "Radial Wire Diameter"
+msgstr ""
+
+#: resources/xnec2c.glade:3485
+msgid "Radial Screen Parameters"
+msgstr ""
+
+#: resources/xnec2c.glade:3685
+msgid "Helical Element (GA card)"
+msgstr ""
+
+#: resources/xnec2c.glade:3710
+msgid "Right Hand Helix"
+msgstr ""
+
+#: resources/xnec2c.glade:3726
+msgid "Left Hand Helix"
+msgstr ""
+
+#: resources/xnec2c.glade:3742
+msgid "Right Hand Spiral"
+msgstr ""
+
+#: resources/xnec2c.glade:3758
+msgid "Left Hand Spiral"
+msgstr ""
+
+#: resources/xnec2c.glade:3789
+msgid "Segments/Turn"
+msgstr ""
+
+#: resources/xnec2c.glade:3828
+msgid "0.0100"
+msgstr ""
+
+#: resources/xnec2c.glade:3849
+msgid "5.00"
+msgstr ""
+
+#: resources/xnec2c.glade:3870
+msgid "8"
+msgstr ""
+
+#: resources/xnec2c.glade:3890 resources/xnec2c.glade:11343
+#: resources/xnec2c.glade:12387
+msgid "1"
+msgstr ""
+
+#: resources/xnec2c.glade:3910
+msgid "Number of Turns"
+msgstr ""
+
+#: resources/xnec2c.glade:3923
+msgid "8.0000"
+msgstr ""
+
+#: resources/xnec2c.glade:3944
+msgid "Helix Length (HL)"
+msgstr ""
+
+#: resources/xnec2c.glade:3957
+msgid "5.0000"
+msgstr ""
+
+#: resources/xnec2c.glade:3978
+msgid "Turns Spacing"
+msgstr ""
+
+#: resources/xnec2c.glade:3991 resources/xnec2c.glade:4103
+#: resources/xnec2c.glade:4156 resources/xnec2c.glade:4209
+#: resources/xnec2c.glade:4257
+msgid "1.0000"
+msgstr ""
+
+#: resources/xnec2c.glade:4025
+msgid "0.0000"
+msgstr ""
+
+#: resources/xnec2c.glade:4045
+msgid "Radius in X (A1)"
+msgstr ""
+
+#: resources/xnec2c.glade:4058
+msgid "Radius in Y (B1)"
+msgstr ""
+
+#: resources/xnec2c.glade:4071
+msgid "Radius in X (A2)"
+msgstr ""
+
+#: resources/xnec2c.glade:4084
+msgid "Radius in Y (B2)"
+msgstr ""
+
+#: resources/xnec2c.glade:4282
+msgid "GH Card"
+msgstr ""
+
+#: resources/xnec2c.glade:4419 resources/xnec2c.glade:14839
+msgid "Interaction Approx Range (KH Card)"
+msgstr ""
+
+#: resources/xnec2c.glade:4446
+msgid "Approximation Range (W/lengths)"
+msgstr ""
+
+#: resources/xnec2c.glade:4484
+msgid "Interaction Approximation Range"
+msgstr ""
+
+#: resources/xnec2c.glade:4610
+msgid "Thin Wire Kernel (EK Card)"
+msgstr ""
+
+#: resources/xnec2c.glade:4628
+msgid "Extended Thin Wire Kernel"
+msgstr ""
+
+#: resources/xnec2c.glade:4645
+msgid "Thin Wire Kernel"
+msgstr ""
+
+#: resources/xnec2c.glade:4808
+msgid "Loading Command (LD Card)"
+msgstr ""
+
+#: resources/xnec2c.glade:4834
+msgid "Short all Loads (Nulls previous Loading Cards)"
+msgstr ""
+
+#: resources/xnec2c.glade:4851
+msgid "Series, Lumped"
+msgstr ""
+
+#: resources/xnec2c.glade:4867
+msgid "Parallel, Distributed"
+msgstr ""
+
+#: resources/xnec2c.glade:4883
+msgid "Parallel, Lumped"
+msgstr ""
+
+#: resources/xnec2c.glade:4899
+msgid "Resistance & Reactance"
+msgstr ""
+
+#: resources/xnec2c.glade:4915
+msgid "Series, Distributed"
+msgstr ""
+
+#: resources/xnec2c.glade:4931
+msgid "Wire Conductivity"
+msgstr ""
+
+#: resources/xnec2c.glade:4953
+msgid "Loading Type"
+msgstr ""
+
+#: resources/xnec2c.glade:4983
+msgid "Load Tag Number"
+msgstr ""
+
+#: resources/xnec2c.glade:5014
+msgid "Resistance"
+msgstr ""
+
+#: resources/xnec2c.glade:5046
+msgid "From Segment #"
+msgstr ""
+
+#: resources/xnec2c.glade:5077
+msgid "Inductance"
+msgstr ""
+
+#: resources/xnec2c.glade:5109
+msgid "To Segment #"
+msgstr ""
+
+#: resources/xnec2c.glade:5140
+msgid "Capacitance"
+msgstr ""
+
+#: resources/xnec2c.glade:5176
+msgid "Loading Parameters"
+msgstr ""
+
+#: resources/xnec2c.glade:5391
+msgid "Near Fields Command (NE/NH Cards)"
+msgstr ""
+
+#: resources/xnec2c.glade:5418
+msgid "Near Electric Field"
+msgstr ""
+
+#: resources/xnec2c.glade:5434
+msgid "Rectangular Co-ordinates"
+msgstr ""
+
+#: resources/xnec2c.glade:5450
+msgid "Near Magnetic Field"
+msgstr ""
+
+#: resources/xnec2c.glade:5465
+msgid "Spherical Co-ordinates"
+msgstr ""
+
+#: resources/xnec2c.glade:5493
+msgid "Field Type & Co-ordinates"
+msgstr ""
+
+#: resources/xnec2c.glade:5523
+msgid "NX"
+msgstr ""
+
+#: resources/xnec2c.glade:5554 resources/xnec2c.glade:10915
+#: resources/xnec2c.glade:11981
+msgid "X"
+msgstr ""
+
+#: resources/xnec2c.glade:5586
+msgid "DX"
+msgstr ""
+
+#: resources/xnec2c.glade:5618
+msgid "NY"
+msgstr ""
+
+#: resources/xnec2c.glade:5649 resources/xnec2c.glade:10930
+#: resources/xnec2c.glade:11996
+msgid "Y"
+msgstr ""
+
+#: resources/xnec2c.glade:5681
+msgid "DY"
+msgstr ""
+
+#: resources/xnec2c.glade:5713
+msgid "NZ"
+msgstr ""
+
+#: resources/xnec2c.glade:5744 resources/xnec2c.glade:10945
+#: resources/xnec2c.glade:12011
+msgid "Z"
+msgstr ""
+
+#: resources/xnec2c.glade:5776
+msgid "DZ"
+msgstr ""
+
+#: resources/xnec2c.glade:5812
+msgid "Field Pattern Parameters"
+msgstr ""
+
+#: resources/xnec2c.glade:5939
+msgid "Xnec2c: NEC2 Input File Editor"
+msgstr ""
+
+#: resources/xnec2c.glade:6026
+msgid "Manage Cards"
+msgstr ""
+
+#: resources/xnec2c.glade:6123
+msgid "File Save"
+msgstr ""
+
+#: resources/xnec2c.glade:6183 src/nec2_model.c:70
+msgid "Comments"
+msgstr ""
+
+#: resources/xnec2c.glade:6210
+msgid "Wire"
+msgstr ""
+
+#: resources/xnec2c.glade:6224
+msgid "Arc"
+msgstr ""
+
+#: resources/xnec2c.glade:6238
+msgid "Helix"
+msgstr ""
+
+#: resources/xnec2c.glade:6252
+msgid "Patch"
+msgstr ""
+
+#: resources/xnec2c.glade:6266
+msgid "Cylinder"
+msgstr ""
+
+#: resources/xnec2c.glade:6280
+msgid "Move"
+msgstr ""
+
+#: resources/xnec2c.glade:6294
+msgid "Reflect"
+msgstr ""
+
+#: resources/xnec2c.glade:6308
+msgid "Scale"
+msgstr ""
+
+#: resources/xnec2c.glade:6328
+msgid "Edit Geometry Data"
+msgstr ""
+
+#: resources/xnec2c.glade:6382
+msgid "Geometry"
+msgstr ""
+
+#: resources/xnec2c.glade:6409
+msgid "Excitation"
+msgstr ""
+
+#: resources/xnec2c.glade:6423
+msgid "Radiation"
+msgstr ""
+
+#: resources/xnec2c.glade:6437
+msgid "Frequency"
+msgstr ""
+
+#: resources/xnec2c.glade:6451
+msgid "Near Fields"
+msgstr ""
+
+#: resources/xnec2c.glade:6465
+msgid "Ground (GN)"
+msgstr ""
+
+#: resources/xnec2c.glade:6479
+msgid "Ground (GD)"
+msgstr ""
+
+#: resources/xnec2c.glade:6493
+msgid "Loading"
+msgstr ""
+
+#: resources/xnec2c.glade:6507
+msgid "Kernel"
+msgstr ""
+
+#: resources/xnec2c.glade:6521
+msgid "Network"
+msgstr ""
+
+#: resources/xnec2c.glade:6535
+msgid "Interaction"
+msgstr ""
+
+#: resources/xnec2c.glade:6549
+msgid "Transm. Line"
+msgstr ""
+
+#: resources/xnec2c.glade:6564
+msgid "Execute"
+msgstr ""
+
+#: resources/xnec2c.glade:6578
+msgid "Zo"
+msgstr ""
+
+#: resources/xnec2c.glade:6598
+msgid "Edit Control Commands"
+msgstr ""
+
+#: resources/xnec2c.glade:6652
+msgid "Commands"
+msgstr ""
+
+#: resources/xnec2c.glade:6671
+msgid "Unsaved Data"
+msgstr ""
+
+#: resources/xnec2c.glade:6747
+msgid ""
+"Unsaved data in NEC2 Editor.\n"
+"Save NEC2 Editor data first?\n"
+msgstr ""
+
+#: resources/xnec2c.glade:6846
+msgid "Network Command (NT Card)"
+msgstr ""
+
+#: resources/xnec2c.glade:6875
+msgid "Tag Number, Port 1  "
+msgstr ""
+
+#: resources/xnec2c.glade:6906
+msgid "Tag Number, Port 2  "
+msgstr ""
+
+#: resources/xnec2c.glade:6937
+msgid "Segment Num, Port 1"
+msgstr ""
+
+#: resources/xnec2c.glade:6968
+msgid "Segment Num, Port 2"
+msgstr ""
+
+#: resources/xnec2c.glade:7003 resources/xnec2c.glade:13625
+msgid "Segment Identity"
+msgstr ""
+
+#: resources/xnec2c.glade:7033
+msgid "Element 1,1 Real Part"
+msgstr ""
+
+#: resources/xnec2c.glade:7065
+msgid "Element 1,2 Real Part"
+msgstr ""
+
+#: resources/xnec2c.glade:7097
+msgid "Element 2,2 Real Part"
+msgstr ""
+
+#: resources/xnec2c.glade:7129
+msgid "Element 1,1 Imag Part"
+msgstr ""
+
+#: resources/xnec2c.glade:7161
+msgid "Element 1,2 Imag Part"
+msgstr ""
+
+#: resources/xnec2c.glade:7193
+msgid "Element 2,2 Imag Part"
+msgstr ""
+
+#: resources/xnec2c.glade:7229
+msgid "Admittance Matrix Elements"
+msgstr ""
+
+#: resources/xnec2c.glade:7444
+msgid "Patch Element (SP & SC Cards)"
+msgstr ""
+
+#: resources/xnec2c.glade:7468
+msgid "Arbitrary"
+msgstr ""
+
+#: resources/xnec2c.glade:7485
+msgid "Rectangle"
+msgstr ""
+
+#: resources/xnec2c.glade:7502
+msgid "Triangle"
+msgstr ""
+
+#: resources/xnec2c.glade:7519
+msgid "Quadrilateral"
+msgstr ""
+
+#: resources/xnec2c.glade:7536
+msgid "Surface"
+msgstr ""
+
+#: resources/xnec2c.glade:7559
+msgid "Patch Type"
+msgstr ""
+
+#: resources/xnec2c.glade:7589
+msgid "Corners 1-2 sub-division (NX)"
+msgstr ""
+
+#: resources/xnec2c.glade:7620
+msgid "Corners 2-3 sub-division (NY)"
+msgstr ""
+
+#: resources/xnec2c.glade:7655
+msgid "Surface Sub-division"
+msgstr ""
+
+#: resources/xnec2c.glade:7685 src/geom_edit.c:1091
+msgid "Center - X"
+msgstr ""
+
+#: resources/xnec2c.glade:7717 src/geom_edit.c:1097
+msgid "Normal - Elev."
+msgstr ""
+
+#: resources/xnec2c.glade:7749 src/geom_edit.c:1093
+msgid "Center - Y"
+msgstr ""
+
+#: resources/xnec2c.glade:7781 src/geom_edit.c:1099
+msgid "Normal - Azim."
+msgstr ""
+
+#: resources/xnec2c.glade:7813 src/geom_edit.c:1095
+msgid "Center - Z"
+msgstr ""
+
+#: resources/xnec2c.glade:7845 src/geom_edit.c:1101
+msgid "Patch Area"
+msgstr ""
+
+#: resources/xnec2c.glade:7881
+msgid "SP/SM Cards"
+msgstr ""
+
+#: resources/xnec2c.glade:7917
+msgid "Corner 3 - X"
+msgstr ""
+
+#: resources/xnec2c.glade:7949
+msgid "Corner 3 - Y"
+msgstr ""
+
+#: resources/xnec2c.glade:7981
+msgid "Corner 3 - Z"
+msgstr ""
+
+#: resources/xnec2c.glade:8029
+msgid "Corner 4 - X"
+msgstr ""
+
+#: resources/xnec2c.glade:8061
+msgid "Corner 4 - Y"
+msgstr ""
+
+#: resources/xnec2c.glade:8093
+msgid "Corner 4 - Z"
+msgstr ""
+
+#: resources/xnec2c.glade:8136
+msgid "SC Card"
+msgstr ""
+
+#: resources/xnec2c.glade:8352
+msgid "Quit xnec2c?"
+msgstr ""
+
+#: resources/xnec2c.glade:8431
+msgid "Radiation Pattern (RP Card)"
+msgstr ""
+
+#: resources/xnec2c.glade:8458
+msgid "Normal (Space) Wave"
+msgstr ""
+
+#: resources/xnec2c.glade:8474
+msgid "Space + Ground Wave"
+msgstr ""
+
+#: resources/xnec2c.glade:8490
+msgid "Linear Cliff"
+msgstr ""
+
+#: resources/xnec2c.glade:8506
+msgid "Radial wire screen"
+msgstr ""
+
+#: resources/xnec2c.glade:8522
+msgid "Circular Cliff + Radials"
+msgstr ""
+
+#: resources/xnec2c.glade:8538
+msgid "Circular Cliff"
+msgstr ""
+
+#: resources/xnec2c.glade:8554
+msgid "Linear Cliff + Radials"
+msgstr ""
+
+#: resources/xnec2c.glade:8572
+msgid "<b>See GN/GD Card Documentation</b>"
+msgstr ""
+
+#: resources/xnec2c.glade:8590
+msgid "Wave Type and Ground (I1)"
+msgstr ""
+
+#: resources/xnec2c.glade:8618
+msgid "Major & Minor Axis & Total Gain"
+msgstr ""
+
+#: resources/xnec2c.glade:8634
+msgid "Vertical, Horizontal & Total Gain"
+msgstr ""
+
+#: resources/xnec2c.glade:8650
+msgid "Major Axis Gain Normalized"
+msgstr ""
+
+#: resources/xnec2c.glade:8666
+msgid "Vertical Axis Gain Normalized"
+msgstr ""
+
+#: resources/xnec2c.glade:8682
+msgid "Total Gain Normalized"
+msgstr ""
+
+#: resources/xnec2c.glade:8698
+msgid "Print/Normalize Directive Gain"
+msgstr ""
+
+#: resources/xnec2c.glade:8714
+msgid "No Normalized Gain"
+msgstr ""
+
+#: resources/xnec2c.glade:8730
+msgid "Minor Axis Gain Normalized"
+msgstr ""
+
+#: resources/xnec2c.glade:8746
+msgid "Horizontal Axis Gain Normalized"
+msgstr ""
+
+#: resources/xnec2c.glade:8762
+msgid "Print/Normalize Power Gain"
+msgstr ""
+
+#: resources/xnec2c.glade:8778
+msgid "No Gain Averaging"
+msgstr ""
+
+#: resources/xnec2c.glade:8794
+msgid "Points in Average Not Printed"
+msgstr ""
+
+#: resources/xnec2c.glade:8810
+msgid "Average Gain Computed"
+msgstr ""
+
+#: resources/xnec2c.glade:8828
+msgid "<b>See RP Card Documentation</b>"
+msgstr ""
+
+#: resources/xnec2c.glade:8846
+msgid "Data Output Control (XNDA)"
+msgstr ""
+
+#: resources/xnec2c.glade:8876
+msgid "Points in Theta"
+msgstr ""
+
+#: resources/xnec2c.glade:8890 src/cmnd_edit.c:1582
+msgid "Initial Theta (deg)"
+msgstr ""
+
+#: resources/xnec2c.glade:8903 src/cmnd_edit.c:1583 src/cmnd_edit.c:2491
+msgid "Increment in Theta"
+msgstr ""
+
+#: resources/xnec2c.glade:8972 src/cmnd_edit.c:1581
+msgid "Points in Phi"
+msgstr ""
+
+#: resources/xnec2c.glade:8985
+msgid "Initial Phi (deg)"
+msgstr ""
+
+#: resources/xnec2c.glade:8998 src/cmnd_edit.c:2490
+msgid "Increment in Phi"
+msgstr ""
+
+#: resources/xnec2c.glade:9067
+msgid "Field Point Distance"
+msgstr ""
+
+#: resources/xnec2c.glade:9099
+msgid "Gain Normalization"
+msgstr ""
+
+#: resources/xnec2c.glade:9141
+msgid "Radiation Pattern Parameters"
+msgstr ""
+
+#: resources/xnec2c.glade:9301
+msgid "Reflect Structure (GX card)"
+msgstr ""
+
+#: resources/xnec2c.glade:9329
+msgid "Reflect in YZ plane"
+msgstr ""
+
+#: resources/xnec2c.glade:9344
+msgid "Reflect in XY plane"
+msgstr ""
+
+#: resources/xnec2c.glade:9359
+msgid "Reflect in XZ plane"
+msgstr ""
+
+#: resources/xnec2c.glade:9415
+msgid "Reflect Options"
+msgstr ""
+
+#: resources/xnec2c.glade:9546
+msgid "Xnec2c: Frequency Data Plots"
+msgstr ""
+
+#: resources/xnec2c.glade:9571 resources/xnec2c.glade:10380
+#: resources/xnec2c.glade:11589
+msgid "_File"
+msgstr "_Datei"
+
+#: resources/xnec2c.glade:9633 resources/xnec2c.glade:10442
+#: resources/xnec2c.glade:11651
+msgid "Save as _gnuplot"
+msgstr ""
+
+#: resources/xnec2c.glade:9644
+msgid "Save as _CSV"
+msgstr ""
+
+#: resources/xnec2c.glade:9656
+msgid "Save as _Touchstone (.SnP)"
+msgstr ""
+
+#: resources/xnec2c.glade:9663
+msgid "Save as S_1P: Reflection Only"
+msgstr ""
+
+#: resources/xnec2c.glade:9673
+msgid "Save as S2P: _Max Gain (S21)"
+msgstr ""
+
+#: resources/xnec2c.glade:9683
+msgid "Save as S2P: _Viewer Gain (S21)"
+msgstr ""
+
+#: resources/xnec2c.glade:9720 resources/xnec2c.glade:10728
+#: resources/xnec2c.glade:11685
+msgid "_View"
+msgstr "_Ansicht"
+
+#: resources/xnec2c.glade:9729 resources/xnec2c.glade:10758
+#: resources/xnec2c.glade:11695
+msgid "_Polarization"
+msgstr ""
+
+#: resources/xnec2c.glade:9739 resources/xnec2c.glade:10768
+#: resources/xnec2c.glade:11705
+msgid "_Total"
+msgstr ""
+
+#: resources/xnec2c.glade:9750 resources/xnec2c.glade:10779
+#: resources/xnec2c.glade:11716
+msgid "_Horizontal"
+msgstr ""
+
+#: resources/xnec2c.glade:9761 resources/xnec2c.glade:10790
+#: resources/xnec2c.glade:11727
+msgid "_Vertical"
+msgstr ""
+
+#: resources/xnec2c.glade:9772 resources/xnec2c.glade:10801
+#: resources/xnec2c.glade:11738
+msgid "_Right Hand"
+msgstr ""
+
+#: resources/xnec2c.glade:9783 resources/xnec2c.glade:10812
+#: resources/xnec2c.glade:11749
+msgid "_Left Hand"
+msgstr ""
+
+#: resources/xnec2c.glade:9798
+msgid "_Net Gain"
+msgstr ""
+
+#: resources/xnec2c.glade:9807
+msgid "Show _Min/Max Values"
+msgstr ""
+
+#: resources/xnec2c.glade:9816
+msgid "Show _S11 (dB) Values"
+msgstr ""
+
+#: resources/xnec2c.glade:9825
+msgid "Clamp _VSWR Graph to 10"
+msgstr ""
+
+#: resources/xnec2c.glade:9834
+msgid "Round _X Axis Frequency Values"
+msgstr ""
+
+#: resources/xnec2c.glade:9858 resources/xnec2c.glade:10008
+msgid "Max Gain"
+msgstr ""
+
+#: resources/xnec2c.glade:9873
+msgid "Direction"
+msgstr ""
+
+#: resources/xnec2c.glade:9888
+msgid "Viewer"
+msgstr ""
+
+#: resources/xnec2c.glade:9903 resources/xnec2c.glade:10113
+#: src/plot_freqdata.c:1481
+msgid "VSWR"
+msgstr ""
+
+#: resources/xnec2c.glade:9918
+msgid "Zr/Zi"
+msgstr ""
+
+#: resources/xnec2c.glade:9933
+msgid "Zm/Zph"
+msgstr ""
+
+#: resources/xnec2c.glade:9948
+msgid "Smith"
+msgstr ""
+
+#: resources/xnec2c.glade:9992 resources/xnec2c.glade:10027
+#: resources/xnec2c.glade:10062 resources/xnec2c.glade:10097
+#: resources/xnec2c.glade:12542
+msgid " - - -"
+msgstr ""
+
+#: resources/xnec2c.glade:10043 src/plot_freqdata.c:1536
+msgid "Z-imag"
+msgstr ""
+
+#: resources/xnec2c.glade:10078 src/plot_freqdata.c:1534
+msgid "Z-real"
+msgstr ""
+
+#: resources/xnec2c.glade:10133
+msgid " - - - - "
+msgstr ""
+
+#: resources/xnec2c.glade:10149
+msgid "Freq MHz"
+msgstr ""
+
+#: resources/xnec2c.glade:10188
+msgid "Tx Line Zo"
+msgstr ""
+
+#: resources/xnec2c.glade:10202 resources/xnec2c.glade:11358
+#: resources/xnec2c.glade:12418
+msgid "Freq Loop"
+msgstr ""
+
+#: resources/xnec2c.glade:10336
+msgid "Frequency Data Plots"
+msgstr ""
+
+#: resources/xnec2c.glade:10461
+msgid "Optimization Settings"
+msgstr ""
+
+#: resources/xnec2c.glade:10470
+msgid "Reload and write data on .NEC file changes"
+msgstr ""
+
+#: resources/xnec2c.glade:10477
+msgid "_Write files selected below, now."
+msgstr ""
+
+#: resources/xnec2c.glade:10492
+msgid "After calculation, write <file>.csv"
+msgstr ""
+
+#: resources/xnec2c.glade:10501
+msgid "After calculation, write <file>.s_1p"
+msgstr ""
+
+#: resources/xnec2c.glade:10510
+msgid "After calculation, write <file>-_maxgain.s2p"
+msgstr ""
+
+#: resources/xnec2c.glade:10519
+msgid "After calculation, write <file>-_viewergain.s2p"
+msgstr ""
+
+#: resources/xnec2c.glade:10534
+msgid "_Math Libraries"
+msgstr ""
+
+#: resources/xnec2c.glade:10543
+msgid "_Interactive"
+msgstr ""
+
+#: resources/xnec2c.glade:10557
+msgid "_Batch"
+msgstr ""
+
+#: resources/xnec2c.glade:10577
+msgid "Mathlib _Help"
+msgstr ""
+
+#: resources/xnec2c.glade:10590
+msgid "Mathlib _Benchmarks"
+msgstr ""
+
+#: resources/xnec2c.glade:10601
+msgid "_Selected Mathlibs"
+msgstr ""
+
+#: resources/xnec2c.glade:10609
+msgid "Select All/None"
+msgstr ""
+
+#: resources/xnec2c.glade:10634
+msgid "_Parallel (-j N):\t\tO(N/J)"
+msgstr ""
+
+#: resources/xnec2c.glade:10643
+msgid "_Single Job (-j 1):\tO(N)"
+msgstr ""
+
+#: resources/xnec2c.glade:10652
+msgid "_Iterate -j N/=2:\tO(N*log2(J))"
+msgstr ""
+
+#: resources/xnec2c.glade:10661
+msgid "_Iterate -j N-=1:\tO(N*J)"
+msgstr ""
+
+#: resources/xnec2c.glade:10676
+msgid "Benchmark _Help"
+msgstr ""
+
+#: resources/xnec2c.glade:10697
+msgid "Confirm Quit"
+msgstr ""
+
+#: resources/xnec2c.glade:10738
+msgid "_Radiation Pattern"
+msgstr ""
+
+#: resources/xnec2c.glade:10748
+msgid "_Frequency Plots"
+msgstr ""
+
+#: resources/xnec2c.glade:10827 resources/xnec2c.glade:11907
+msgid "Common _Projection"
+msgstr ""
+
+#: resources/xnec2c.glade:10837 resources/xnec2c.glade:11917
+msgid "Common _Frequency"
+msgstr ""
+
+#: resources/xnec2c.glade:10849
+msgid "_Help"
+msgstr "_Hilfe"
+
+#: resources/xnec2c.glade:10858
+msgid "_About"
+msgstr "_Über"
+
+#: resources/xnec2c.glade:10885
+msgid "Currents"
+msgstr "Ströme"
+
+#: resources/xnec2c.glade:10900
+msgid "Charges"
+msgstr "Ladungen"
+
+#: resources/xnec2c.glade:11081
+msgid " Zoom"
+msgstr ""
+
+#: resources/xnec2c.glade:11203 resources/xnec2c.glade:12354
+msgid "Gain"
+msgstr ""
+
+#: resources/xnec2c.glade:11218 resources/xnec2c.glade:11234
+#: resources/xnec2c.glade:12367 resources/xnec2c.glade:12524
+msgid "0.0"
+msgstr ""
+
+#: resources/xnec2c.glade:11268
+msgid "- - - "
+msgstr ""
+
+#: resources/xnec2c.glade:11310 resources/xnec2c.glade:12510
+msgid "dB"
+msgstr ""
+
+#: resources/xnec2c.glade:11324 resources/xnec2c.glade:12403
+msgid "Step"
+msgstr ""
+
+#: resources/xnec2c.glade:11471 resources/xnec2c.glade:12451
+msgid "Apply"
+msgstr ""
+
+#: resources/xnec2c.glade:11491
+msgid "Frequency Mhz"
+msgstr ""
+
+#: resources/xnec2c.glade:11544
+msgid "Structure Geometry"
+msgstr ""
+
+#: resources/xnec2c.glade:11563
+msgid "Xnec2c: Radiation Patterns"
+msgstr ""
+
+#: resources/xnec2c.glade:11764
+msgid "_Gain Scaling"
+msgstr ""
+
+#: resources/xnec2c.glade:11773
+msgid "Linear _Power"
+msgstr ""
+
+#: resources/xnec2c.glade:11784
+msgid "Linear _Voltage"
+msgstr ""
+
+#: resources/xnec2c.glade:11795
+msgid "_ARRL Style"
+msgstr ""
+
+#: resources/xnec2c.glade:11806
+msgid "_Logarithmic"
+msgstr ""
+
+#: resources/xnec2c.glade:11821
+msgid "_Near Field"
+msgstr ""
+
+#: resources/xnec2c.glade:11830
+msgid "Near _E Field"
+msgstr ""
+
+#: resources/xnec2c.glade:11840
+msgid "Near _H Field"
+msgstr ""
+
+#: resources/xnec2c.glade:11850
+msgid "_Poynting Vector"
+msgstr ""
+
+#: resources/xnec2c.glade:11859
+msgid "_Animate Dialog"
+msgstr ""
+
+#: resources/xnec2c.glade:11868
+msgid "_Total Field"
+msgstr ""
+
+#: resources/xnec2c.glade:11877
+msgid "_Peak Value"
+msgstr ""
+
+#: resources/xnec2c.glade:11888
+msgid "_Snapshot"
+msgstr ""
+
+#: resources/xnec2c.glade:11927
+msgid "_Overlay Structure"
+msgstr ""
+
+#: resources/xnec2c.glade:11951
+msgid "Gain Pattern"
+msgstr ""
+
+#: resources/xnec2c.glade:11966
+msgid "E/H Fields"
+msgstr ""
+
+#: resources/xnec2c.glade:12149
+msgid "Zoom % "
+msgstr ""
+
+#: resources/xnec2c.glade:12470
+msgid "Frequency MHz"
+msgstr ""
+
+#: resources/xnec2c.glade:12487
+msgid "0.010"
+msgstr ""
+
+#: resources/xnec2c.glade:12608 src/draw_radiation.c:1006
+msgid "Radiation Patterns"
+msgstr ""
+
+#: resources/xnec2c.glade:12643
+msgid "Scale Structure (GS card)"
+msgstr ""
+
+#: resources/xnec2c.glade:12674
+msgid "Structure Scale Factor"
+msgstr ""
+
+#: resources/xnec2c.glade:12687
+msgid "From Tag No."
+msgstr ""
+
+#: resources/xnec2c.glade:12737
+msgid "To Tag No."
+msgstr ""
+
+#: resources/xnec2c.glade:12772
+msgid "Scale Structure"
+msgstr ""
+
+#: resources/xnec2c.glade:12949
+msgid "Co-ordinate Transformation (GM card)"
+msgstr ""
+
+#: resources/xnec2c.glade:12979
+msgid "Tag Increment"
+msgstr ""
+
+#: resources/xnec2c.glade:13010
+msgid "Rotate about X"
+msgstr ""
+
+#: resources/xnec2c.glade:13042
+msgid "Move along X"
+msgstr ""
+
+#: resources/xnec2c.glade:13074
+msgid "New Structures"
+msgstr ""
+
+#: resources/xnec2c.glade:13105
+msgid "Rotate about Y"
+msgstr ""
+
+#: resources/xnec2c.glade:13137
+msgid "Move along Y"
+msgstr ""
+
+#: resources/xnec2c.glade:13169
+msgid "Start From Tag"
+msgstr ""
+
+#: resources/xnec2c.glade:13201
+msgid "Rotate about Z"
+msgstr ""
+
+#: resources/xnec2c.glade:13233
+msgid "Move along Z"
+msgstr ""
+
+#: resources/xnec2c.glade:13269
+msgid "Co-ordinate Transformation Data"
+msgstr ""
+
+#: resources/xnec2c.glade:13465
+msgid "Trans. Line Command (TL Card)"
+msgstr ""
+
+#: resources/xnec2c.glade:13495
+msgid "Tag Number, End 1  "
+msgstr ""
+
+#: resources/xnec2c.glade:13527
+msgid "Tag Number, End 2  "
+msgstr ""
+
+#: resources/xnec2c.glade:13558
+msgid "Segment Num, End 1"
+msgstr ""
+
+#: resources/xnec2c.glade:13590
+msgid "Segment Num, End 2"
+msgstr ""
+
+#: resources/xnec2c.glade:13654
+msgid "Crossed Transmission Line"
+msgstr ""
+
+#: resources/xnec2c.glade:13672
+msgid "Characteristic Impedance"
+msgstr ""
+
+#: resources/xnec2c.glade:13704
+msgid "End 1 Y Real Part (S)"
+msgstr ""
+
+#: resources/xnec2c.glade:13736
+msgid "End 2 Y Real Part (S)"
+msgstr ""
+
+#: resources/xnec2c.glade:13768
+msgid "Length of Tx Line (m)"
+msgstr ""
+
+#: resources/xnec2c.glade:13800
+msgid "End 1 Y Imag Part (S)"
+msgstr ""
+
+#: resources/xnec2c.glade:13832
+msgid "End 2 Y Imag Part (S)"
+msgstr ""
+
+#: resources/xnec2c.glade:13868
+msgid "Transmission Line"
+msgstr ""
+
+#: resources/xnec2c.glade:14095
+msgid "Wire Element (GW & GC cards)"
+msgstr ""
+
+#: resources/xnec2c.glade:14155
+msgid "Wire X1"
+msgstr ""
+
+#: resources/xnec2c.glade:14187
+msgid "Wire X2"
+msgstr ""
+
+#: resources/xnec2c.glade:14250
+msgid "Wire Y1"
+msgstr ""
+
+#: resources/xnec2c.glade:14283
+msgid "Wire Y2"
+msgstr ""
+
+#: resources/xnec2c.glade:14347
+msgid "Wire Z1"
+msgstr ""
+
+#: resources/xnec2c.glade:14379
+msgid "Wire Z2"
+msgstr ""
+
+#: resources/xnec2c.glade:14444
+msgid "Wire Length"
+msgstr ""
+
+#: resources/xnec2c.glade:14515
+msgid "Wire Data"
+msgstr ""
+
+#: resources/xnec2c.glade:14527
+msgid "Tapered Wire"
+msgstr ""
+
+#: resources/xnec2c.glade:14569
+msgid "Length Taper"
+msgstr ""
+
+#: resources/xnec2c.glade:14601
+msgid "Diameter Seg 1"
+msgstr ""
+
+#: resources/xnec2c.glade:14633
+msgid "Diameter Seg N"
+msgstr ""
+
+#: resources/xnec2c.glade:14665
+msgid "Diam. Taper"
+msgstr ""
+
+#: resources/xnec2c.glade:14701
+msgid "Wire Taper Data"
+msgstr ""
+
+#: resources/xnec2c.glade:14866
+msgid "Impedance (Zo) Ohm"
+msgstr ""
+
+#: resources/xnec2c.glade:14881
+msgid "50.00"
+msgstr ""
+
+#: resources/xnec2c.glade:14904
+msgid "Transmission Line Impedance (Zo)"
+msgstr ""
+
+#: src/calculations.c:117 src/calculations.c:1276
+#, c-format
+msgid "segment connection error for segment %5d\n"
+msgstr ""
+
+#: src/calculations.c:118
+msgid "Segment connection error in tbf()"
+msgstr ""
+
+#: src/calculations.c:890
+#, c-format
+msgid "step size limited at z= %10.5f\n"
+msgstr ""
+
+#: src/calculations.c:1054
+#, c-format
+msgid "segment connection error for segment %d\n"
+msgstr ""
+
+#: src/calculations.c:1055
+msgid "Segment connection error in sbf()"
+msgstr ""
+
+#: src/calculations.c:1277
+msgid "Segment connection error in trio()"
+msgstr ""
+
+#: src/callback_func.c:261
+msgid ""
+"The frequency loop is running\n"
+"Are you sure you wish to end the calculation?"
+msgstr ""
+
+#: src/callback_func.c:265
+msgid ""
+"The frequency loop is running\n"
+"Are you sure you wish to close this window?"
+msgstr ""
+
+#: src/callback_func.c:506
+msgid ""
+"Not available for Incident Field or\n"
+"Elementary Current Source Excitation.\n"
+"(Excitation Types 1 to 4)"
+msgstr ""
+
+#: src/callback_func.c:684
+msgid "View Currents"
+msgstr ""
+
+#: src/callback_func.c:706 src/callback_func.c:765
+msgid "View Geometry"
+msgstr ""
+
+#: src/callback_func.c:743
+msgid "View Charges"
+msgstr ""
+
+#: src/callback_func.c:808
+msgid "PNG images (*.png)"
+msgstr ""
+
+#: src/callback_func.c:810
+msgid "GNUplot files (*.gplot)"
+msgstr ""
+
+#: src/callback_func.c:812
+msgid "NEC2 files (*.nec)"
+msgstr ""
+
+#: src/callback_func.c:814
+msgid "Touchstone 1-port files (*.s1p)"
+msgstr ""
+
+#: src/callback_func.c:816
+msgid "Touchstone 2-port files (*.s2p)"
+msgstr ""
+
+#: src/callback_func.c:818
+msgid "Comma-separated CSV files (*.csv)"
+msgstr ""
+
+#: src/callbacks.c:88 src/callbacks.c:349 src/callbacks.c:1755
+#: src/callbacks.c:2102
+msgid "Are you sure you wish to quit xnec2c?"
+msgstr ""
+
+#: src/callbacks.c:131
+msgid ""
+"A new NEC2 input file may not be created\n"
+"while the Frequency Loop is running"
+msgstr ""
+
+#: src/callbacks.c:171
+msgid ""
+"A new NEC2 input file may not be opened\n"
+"while the Frequency Loop is running"
+msgstr ""
+
+#: src/callbacks.c:275
+msgid "xnec2c geometry optimizer"
+msgstr ""
+
+#: src/callbacks.c:276
+msgid ""
+"xnec2c was built without inotify support: the optimizer cannot be enabled."
+msgstr ""
+
+#: src/callbacks.c:295
+msgid "Xnec2c Optimizer"
+msgstr ""
+
+#: src/callbacks.c:295
+msgid ""
+"No files are selected for writing. However, xnec2c will still reload and "
+"recalculate the input file on modification when triggered by inotify."
+msgstr ""
+
+#: src/callbacks.c:305
+msgid "failed to create Optimizer Output thread\n"
+msgstr ""
+
+#: src/callbacks.c:995 src/callbacks.c:1308 src/callbacks.c:2128
+msgid "Are you sure you wish to close this window?"
+msgstr ""
+
+#: src/callbacks.c:2066
+msgid "No open NEC2 input file"
+msgstr ""
+
+#: src/callbacks.c:2159 src/callbacks.c:2189
+msgid ""
+"NEC2 Editor's data may not be saved\n"
+"while the Frequency Loop is running"
+msgstr ""
+
+#: src/callbacks.c:2171 src/callbacks.c:2197
+msgid "untitled.nec"
+msgstr ""
+
+#: src/callbacks.c:2657 src/callbacks.c:2678 src/callbacks.c:2699
+#: src/geom_edit.c:437 src/geom_edit.c:1254 src/geom_edit.c:1497
+msgid ""
+"Frequency (FR) cards not yet processed.\n"
+"You may need to save the NEC2 Editor data first."
+msgstr ""
+
+#: src/cmnd_edit.c:82
+msgid ""
+"Get_Command_Data(): Error reading\n"
+"row data: Invalid list iterator"
+msgstr ""
+
+#: src/cmnd_edit.c:118
+msgid ""
+"Set_Command_Data(): Error writing row data\n"
+"Please re-select row"
+msgstr ""
+
+#: src/cmnd_edit.c:436
+msgid "Voltage Real Part"
+msgstr ""
+
+#: src/cmnd_edit.c:437
+msgid "Voltage Imaginary Part"
+msgstr ""
+
+#: src/cmnd_edit.c:438 src/cmnd_edit.c:1593
+msgid "Normalization Factor"
+msgstr ""
+
+#: src/cmnd_edit.c:439 src/cmnd_edit.c:440 src/cmnd_edit.c:441
+#: src/cmnd_edit.c:477 src/cmnd_edit.c:478 src/cmnd_edit.c:1828
+#: src/cmnd_edit.c:1839 src/cmnd_edit.c:1840
+msgid "  ** NOT USED **"
+msgstr ""
+
+#: src/cmnd_edit.c:459
+msgid "Num of Theta Angles"
+msgstr ""
+
+#: src/cmnd_edit.c:460
+msgid "Num of Phi Angles"
+msgstr ""
+
+#: src/cmnd_edit.c:461
+msgid "Theta Angle (deg)"
+msgstr ""
+
+#: src/cmnd_edit.c:462
+msgid "Phi Angle (deg)"
+msgstr ""
+
+#: src/cmnd_edit.c:463
+msgid "Eta Angle (deg)"
+msgstr ""
+
+#: src/cmnd_edit.c:464
+msgid "Theta Increment (deg)"
+msgstr ""
+
+#: src/cmnd_edit.c:465
+msgid "Phi Increment (deg)"
+msgstr ""
+
+#: src/cmnd_edit.c:466
+msgid "Minor/Major Axis"
+msgstr ""
+
+#: src/cmnd_edit.c:479
+msgid "X Position (m)"
+msgstr ""
+
+#: src/cmnd_edit.c:480
+msgid "Y Position (m)"
+msgstr ""
+
+#: src/cmnd_edit.c:481
+msgid "Z Position (m)"
+msgstr ""
+
+#: src/cmnd_edit.c:482
+msgid "alpha Angle (deg)"
+msgstr ""
+
+#: src/cmnd_edit.c:483
+msgid "beta Angle (deg)"
+msgstr ""
+
+#: src/cmnd_edit.c:484
+msgid "Current Moment (A.m)"
+msgstr ""
+
+#: src/cmnd_edit.c:1570
+msgid "Points in Z"
+msgstr ""
+
+#: src/cmnd_edit.c:1571
+msgid "Initial Z (m)"
+msgstr ""
+
+#: src/cmnd_edit.c:1572
+msgid "Increment in Z"
+msgstr ""
+
+#: src/cmnd_edit.c:1573
+msgid "Field Point R (m)"
+msgstr ""
+
+#: src/cmnd_edit.c:1584
+msgid "R (m) (Optional)"
+msgstr ""
+
+#: src/cmnd_edit.c:1597
+msgid "** NOT USED **"
+msgstr ""
+
+#: src/cmnd_edit.c:1802 src/cmnd_edit.c:1826
+msgid "Resistance Ohm"
+msgstr ""
+
+#: src/cmnd_edit.c:1803
+msgid "Inductance uH"
+msgstr ""
+
+#: src/cmnd_edit.c:1804
+msgid "Capacitance pF"
+msgstr ""
+
+#: src/cmnd_edit.c:1814
+msgid "Resistance Ohm/m"
+msgstr ""
+
+#: src/cmnd_edit.c:1815
+msgid "Inductance uH/m"
+msgstr ""
+
+#: src/cmnd_edit.c:1816
+msgid "Capacitance pF/m"
+msgstr ""
+
+#: src/cmnd_edit.c:1827
+msgid "Reactance Ohm"
+msgstr ""
+
+#: src/cmnd_edit.c:2467
+msgid "Points in X-axis"
+msgstr ""
+
+#: src/cmnd_edit.c:2468
+msgid "Points in Y-axis"
+msgstr ""
+
+#: src/cmnd_edit.c:2469
+msgid "Points in Z-axis"
+msgstr ""
+
+#: src/cmnd_edit.c:2470
+msgid "First Point X (m)"
+msgstr ""
+
+#: src/cmnd_edit.c:2471
+msgid "First Point Y (m)"
+msgstr ""
+
+#: src/cmnd_edit.c:2472
+msgid "First Point Z (m)"
+msgstr ""
+
+#: src/cmnd_edit.c:2473
+msgid "Increment in X (m)"
+msgstr ""
+
+#: src/cmnd_edit.c:2474
+msgid "Increment in Y (m)"
+msgstr ""
+
+#: src/cmnd_edit.c:2475
+msgid "Increment in Z (m)"
+msgstr ""
+
+#: src/cmnd_edit.c:2483
+msgid "Points along R"
+msgstr ""
+
+#: src/cmnd_edit.c:2484
+msgid "Points along Phi"
+msgstr ""
+
+#: src/cmnd_edit.c:2485
+msgid "Points along Theta"
+msgstr ""
+
+#: src/cmnd_edit.c:2486
+msgid "First Point R (m)"
+msgstr ""
+
+#: src/cmnd_edit.c:2487
+msgid "First Point Phi"
+msgstr ""
+
+#: src/cmnd_edit.c:2488
+msgid "First Point Theta"
+msgstr ""
+
+#: src/cmnd_edit.c:2489
+msgid "Increment in R (m)"
+msgstr ""
+
+#: src/draw_radiation.c:985
+msgid "Total Gain"
+msgstr ""
+
+#: src/draw_radiation.c:986
+msgid "Horizontal Polarization"
+msgstr ""
+
+#: src/draw_radiation.c:987
+msgid "Vertical Polarization"
+msgstr ""
+
+#: src/draw_radiation.c:988
+msgid "RH Circular Polarization"
+msgstr ""
+
+#: src/draw_radiation.c:989
+msgid "LH Circular Polarization"
+msgstr ""
+
+#: src/draw_radiation.c:994
+msgid "Linear Power"
+msgstr ""
+
+#: src/draw_radiation.c:995
+msgid "Linear Voltage"
+msgstr ""
+
+#: src/draw_radiation.c:996
+msgid "ARRL Scale"
+msgstr ""
+
+#: src/draw_radiation.c:997
+msgid "Logarithmic Scale"
+msgstr ""
+
+#: src/draw_radiation.c:1009
+msgid "Radiation Pattern: - "
+msgstr ""
+
+#: src/draw_radiation.c:1016
+msgid "Near Fields:"
+msgstr ""
+
+#: src/draw_radiation.c:1018
+msgid " - E Field"
+msgstr ""
+
+#: src/draw_radiation.c:1020
+msgid " - H Field"
+msgstr ""
+
+#: src/draw_radiation.c:1022
+msgid " - Poynting Vector"
+msgstr ""
+
+#: src/draw_radiation.c:1032
+msgid "Frequency Data Plots - "
+msgstr ""
+
+#: src/fields.c:925
+#, c-format
+msgid "step size limited at z= %10.5f"
+msgstr ""
+
+#: src/fork.c:159 src/fork.c:546
+#, c-format
+msgid "child %d  length %d  return %d\n"
+msgstr ""
+
+#: src/fork.c:552
+#, c-format
+msgid "early EOF?, child %d  length %d  return %d\n"
+msgstr ""
+
+#: src/geom_edit.c:82 src/geom_edit.c:1896 src/geom_edit.c:2144
+#: src/geom_edit.c:2527
+msgid ""
+"Error reading row data\n"
+"Invalid list iterator"
+msgstr ""
+
+#: src/geom_edit.c:118 src/geom_edit.c:151
+msgid ""
+"Error writing row data\n"
+"Please re-select row"
+msgstr ""
+
+#: src/geom_edit.c:553
+msgid ""
+"GC card preceded by GW card\n"
+"with non-zero wire radius"
+msgstr ""
+
+#: src/geom_edit.c:557
+msgid "No GW card before GC card"
+msgstr ""
+
+#: src/geom_edit.c:581
+msgid ""
+"No GC card after a GW card\n"
+"with a zero wire radius"
+msgstr ""
+
+#: src/geom_edit.c:590
+msgid ""
+"GC card follows a GW card\n"
+"with non-zero wire radius"
+msgstr ""
+
+#: src/geom_edit.c:969
+msgid ""
+"SC card preceded by SP card\n"
+"with arbitrary patch type"
+msgstr ""
+
+#: src/geom_edit.c:981
+msgid "No SP or SM card before SC card"
+msgstr ""
+
+#: src/geom_edit.c:1001
+msgid ""
+"No SC card after an SP card\n"
+"with non-arbitrary patch type"
+msgstr ""
+
+#: src/geom_edit.c:1008
+msgid ""
+"SC card follows an SP card\n"
+"with arbitrary patch type"
+msgstr ""
+
+#: src/geom_edit.c:1021
+msgid "No SC card after an SM card"
+msgstr ""
+
+#: src/geom_edit.c:1106
+msgid "Corner 1 - X"
+msgstr ""
+
+#: src/geom_edit.c:1108
+msgid "Corner 1 - Y"
+msgstr ""
+
+#: src/geom_edit.c:1110
+msgid "Corner 1 - Z"
+msgstr ""
+
+#: src/geom_edit.c:1112
+msgid "Corner 2 - X"
+msgstr ""
+
+#: src/geom_edit.c:1114
+msgid "Corner 2 - Y"
+msgstr ""
+
+#: src/geom_edit.c:1116
+msgid "Corner 2 - Z"
+msgstr ""
+
+#: src/geom_edit.c:2618
+msgid "NEC2 editor window not open"
+msgstr ""
+
+#: src/geometry.c:65
+msgid "number of segments less than 1 (ns < 1)\n"
+msgstr ""
+
+#: src/geometry.c:66
+msgid "Number of segments < 1"
+msgstr ""
+
+#: src/geometry.c:117
+msgid "arc angle exceeds 360 degrees\n"
+msgstr ""
+
+#: src/geometry.c:118
+msgid "Arc angle exceeds 360 degrees"
+msgstr ""
+
+#: src/geometry.c:276
+msgid "np > n\n"
+msgstr ""
+
+#: src/geometry.c:277
+msgid "Error in conect(): np > n"
+msgstr ""
+
+#: src/geometry.c:312 src/geometry.c:362
+#, c-format
+msgid "geometry data error: segment %d extends below ground\n"
+msgstr ""
+
+#: src/geometry.c:313 src/geometry.c:363
+msgid ""
+"Geometry data error\n"
+"Segment extends below ground"
+msgstr ""
+
+#: src/geometry.c:372
+#, c-format
+msgid "geometry data error: segment %d lies in ground plane\n"
+msgstr ""
+
+#: src/geometry.c:373
+msgid ""
+"Geometry data error\n"
+"Segment lies in ground plane"
+msgstr ""
+
+#: src/geometry.c:472
+msgid "ipsym = 0\n"
+msgstr ""
+
+#: src/geometry.c:473
+msgid "Error: ipsym = 0"
+msgstr ""
+
+#: src/geometry.c:735
+msgid ""
+"check data, parameter specifying segment: position in a group of equal tags "
+"must not be zero\n"
+msgstr ""
+
+#: src/geometry.c:736
+msgid ""
+"Parameter specifying segment\n"
+"position in a group of equal tags is zero"
+msgstr ""
+
+#: src/geometry.c:768
+#, c-format
+msgid "no segment has an itag of %d\n"
+msgstr ""
+
+#: src/geometry.c:769
+msgid "Segment tag number error"
+msgstr ""
+
+#: src/geometry.c:1079
+msgid "corners of quadrilateral: patch do not lie in a plane\n"
+msgstr ""
+
+#: src/geometry.c:1080
+msgid ""
+"Corners of quadrilateral\n"
+"patch do not lie in a plane"
+msgstr ""
+
+#: src/geometry.c:1210 src/geometry.c:1310 src/geometry.c:1412
+#, c-format
+msgid "geometry data error: segment %d lies in plane of symmetry\n"
+msgstr ""
+
+#: src/geometry.c:1211 src/geometry.c:1311 src/geometry.c:1413
+msgid ""
+"Geometry data error\n"
+"Segment lies in plane of symmetry"
+msgstr ""
+
+#: src/geometry.c:1259 src/geometry.c:1359 src/geometry.c:1459
+#, c-format
+msgid "geometry data error: patch %d lies in plane of symmetry\n"
+msgstr ""
+
+#: src/geometry.c:1260 src/geometry.c:1360 src/geometry.c:1460
+msgid ""
+"Geometry data error\n"
+"Patch lies in plane of symmetry"
+msgstr ""
+
+#: src/gnuplot.c:46
+msgid "Gnuplot Data"
+msgstr ""
+
+#: src/gnuplot.c:60
+#, c-format
+msgid "# Reference impedance Z0 = %.2f Ohm\n"
+msgstr ""
+
+#: src/gnuplot.c:62
+#, c-format
+msgid ""
+"# To plot in gnuplot you can modify this command.  Presently it plots MHz vs "
+"zreal and zimag:\n"
+msgstr ""
+
+#: src/gnuplot.c:63
+#, c-format
+msgid ""
+"#    plot for [i=2:3]  'filename.gplot' using 1:i with lines smooth bezier "
+"title columnhead(i);\n"
+msgstr ""
+
+#: src/gnuplot.c:88 src/gnuplot.c:169
+msgid "Touchstone Data"
+msgstr ""
+
+#: src/gnuplot.c:102
+#, c-format
+msgid "! Reference impedance Z0 = %.2f Ohm\n"
+msgstr ""
+
+#: src/gnuplot.c:130
+#, c-format
+msgid "This should never happen. touchstone type=%d\n"
+msgstr ""
+
+#: src/gnuplot.c:227
+#, c-format
+msgid "# Near E field\n"
+msgstr ""
+
+#: src/gnuplot.c:250
+#, c-format
+msgid "# Near H field\n"
+msgstr ""
+
+#: src/gnuplot.c:297
+#, c-format
+msgid "# Poynting Vector\n"
+msgstr ""
+
+#: src/gnuplot.c:369
+#, c-format
+msgid "# Radiation Pattern\n"
+msgstr ""
+
+#: src/gnuplot.c:436
+#, c-format
+msgid "# structure patch segments\n"
+msgstr ""
+
+#: src/gnuplot.c:461
+#, c-format
+msgid "# structure wire segments\n"
+msgstr ""
+
+#: src/ground.c:90
+msgid "b less than a\n"
+msgstr ""
+
+#: src/ground.c:91
+msgid "b less than a"
+msgstr ""
+
+#: src/ground.c:216
+#, c-format
+msgid "step size limited at z = %12.5E\n"
+msgstr ""
+
+#: src/input.c:68
+msgid "unexpected EOF (End of File)\n"
+msgstr ""
+
+#: src/input.c:69
+msgid ""
+"Error reading Comments\n"
+"Unexpected EOF (End of File)"
+msgstr ""
+
+#: src/input.c:83
+msgid "error reading Comments: Comment mnemonic short or missing\n"
+msgstr ""
+
+#: src/input.c:84
+msgid ""
+"Error reading Comments\n"
+"Comment mnemonic short or missing"
+msgstr ""
+
+#: src/input.c:95
+msgid ""
+"Read_Comments():\n"
+" Error reading input file\n"
+"Comment mnemonic incorrect"
+msgstr ""
+
+#: src/input.c:119
+msgid "geometry data card error - tag number is less than 1\n"
+msgstr ""
+
+#: src/input.c:120
+msgid ""
+"Geometry data error\n"
+"Tag number is less than 1"
+msgstr ""
+
+#: src/input.c:127
+msgid "geometry data card error - number of segments is less than 1\n"
+msgstr ""
+
+#: src/input.c:128
+msgid ""
+"Geometry data error\n"
+"Number of segments is less than 1"
+msgstr ""
+
+#: src/input.c:208
+msgid "geometry data card error no GC card for tapered wire\n"
+msgstr ""
+
+#: src/input.c:209
+msgid ""
+"Geometry data error\n"
+"No GC card for tapered wire"
+msgstr ""
+
+#: src/input.c:216
+msgid "geometry GC data card error\n"
+msgstr ""
+
+#: src/input.c:217
+msgid "Geometry GC data card error"
+msgstr ""
+
+#: src/input.c:233
+msgid "geometry GX data card error\n"
+msgstr ""
+
+#: src/input.c:234
+msgid "Geometry GX data card error"
+msgstr ""
+
+#: src/input.c:257
+msgid "geometry GR data card error\n"
+msgstr ""
+
+#: src/input.c:258
+msgid "Geometry GR data card error"
+msgstr ""
+
+#: src/input.c:315
+msgid "No geometry data cards"
+msgstr ""
+
+#: src/input.c:362
+#, c-format
+msgid "segment data error: tag=%d si=%lf, bi=%lf\n"
+msgstr ""
+
+#: src/input.c:364
+msgid "Segment data error, zero-length line?  See console."
+msgstr ""
+
+#: src/input.c:399
+msgid "move GM data card error\n"
+msgstr ""
+
+#: src/input.c:400
+msgid "Move GM data card error"
+msgstr ""
+
+#: src/input.c:416 src/input.c:496 src/input.c:505
+msgid "patch data card error\n"
+msgstr ""
+
+#: src/input.c:417 src/input.c:460 src/input.c:478 src/input.c:497
+#: src/input.c:506
+msgid "Patch data card error"
+msgstr ""
+
+#: src/input.c:439
+msgid "patch data error\n"
+msgstr ""
+
+#: src/input.c:440
+msgid "Patch data error"
+msgstr ""
+
+#: src/input.c:459 src/input.c:477
+msgid "patch card data error\n"
+msgstr ""
+
+#: src/input.c:553
+msgid "\"GF\" card (NGF solution) is not supported\n"
+msgstr ""
+
+#: src/input.c:554
+msgid ""
+"\"GF\" card (NGF solution)\n"
+"is not supported"
+msgstr ""
+
+#: src/input.c:559
+msgid "ignoring CM card in geometry\n"
+msgstr ""
+
+#: src/input.c:560
+msgid "Ignoring CM card in geometry"
+msgstr ""
+
+#: src/input.c:564
+msgid "geometry data card error\n"
+msgstr ""
+
+#: src/input.c:565
+#, c-format
+msgid "%2s %3d %5d %10.5f %10.5f %10.5f %10.5f %10.5f %10.5f %10.5f\n"
+msgstr ""
+
+#: src/input.c:568
+msgid "Geometry data card error"
+msgstr ""
+
+#: src/input.c:748
+msgid "ignoring CM card in commands\n"
+msgstr ""
+
+#: src/input.c:749
+msgid "Ignoring CM card in commands"
+msgstr ""
+
+#: src/input.c:754
+msgid ""
+"CP card is ignored\n"
+"Coupling calculation not implemented"
+msgstr ""
+
+#: src/input.c:932
+msgid "Max frequency <= Min frequency in FR card\n"
+msgstr ""
+
+#: src/input.c:933
+msgid ""
+"Max frequency <= Min frequency in FR card\n"
+"Please check FR card data and correct"
+msgstr ""
+
+#: src/input.c:956
+msgid ""
+"Fix the GE/GN cards:\n"
+"The GE card specifies that a ground is present, but the GN indicates "
+"otherwise."
+msgstr ""
+
+#: src/input.c:970
+msgid "theta > 90 deg. with ground specified\n"
+msgstr ""
+
+#: src/input.c:971 src/radiation.c:657
+msgid ""
+"Theta > 90 deg with ground specified\n"
+"Please check RP card data and correct"
+msgstr ""
+
+#: src/input.c:980
+msgid ""
+"radial wire g.s. approximation: may not be used with Sommerfeld ground "
+"option\n"
+msgstr ""
+
+#: src/input.c:981
+msgid ""
+"radial wire g.s. approximation\n"
+"may not be used with Sommerfeld ground option"
+msgstr ""
+
+#: src/input.c:1032
+#, c-format
+msgid ""
+"data fault on loading card no %d: itag step1 %d is greater than itag step2 "
+"%d\n"
+msgstr ""
+
+#: src/input.c:1034
+msgid ""
+"Data fault on loading card\n"
+"itag step1 is greater than itag step2"
+msgstr ""
+
+#: src/input.c:1167
+msgid ""
+"Transmission Line impedance = 0: is not valid. Please correct NT or TL card\n"
+msgstr ""
+
+#: src/input.c:1168
+msgid ""
+"Transmission Line impedance = 0\n"
+"is not valid. Please correct NT or TL card"
+msgstr ""
+
+#: src/input.c:1177
+msgid "Segment number error in TL or NT card\n"
+msgstr ""
+
+#: src/input.c:1178
+msgid ""
+"Segment number\n"
+"error in NT or TL card"
+msgstr ""
+
+#: src/input.c:1199
+msgid "PQ and PT cards are ignored: Printing to file not implemented\n"
+msgstr ""
+
+#: src/input.c:1200
+msgid ""
+"PQ and PT cards are ignored\n"
+"Printing to file not implemented"
+msgstr ""
+
+#: src/input.c:1207
+msgid "Surface wave option (I1=1): of RP command not implemented\n"
+msgstr ""
+
+#: src/input.c:1208
+msgid ""
+"Surface wave option (I1=1)\n"
+"of RP command not implemented"
+msgstr ""
+
+#: src/input.c:1231
+msgid "Gain averaging (XNDA ***1 or ***2): of RP command not implemented\n"
+msgstr ""
+
+#: src/input.c:1232
+msgid ""
+"Gain averaging (XNDA ***1 or ***2)\n"
+"of RP command not supported"
+msgstr ""
+
+#: src/input.c:1249
+msgid ""
+"Theta > 90 deg. with ground specified: Please check RP card data and "
+"correct\n"
+msgstr ""
+
+#: src/input.c:1250
+msgid ""
+"Theta > 90 deg. with ground specified\n"
+"Please check RP card data and correct"
+msgstr ""
+
+#: src/input.c:1313
+msgid "Faulty data card"
+msgstr ""
+
+#: src/input.c:1315
+#, c-format
+msgid "%s"
+msgstr ""
+
+#: src/input.c:1323
+msgid ""
+"Missing or surface-wave RP card: Radiation pattern and gain calculations "
+"disabled\n"
+msgstr ""
+
+#: src/input.c:1337
+msgid "Unexpected exit from while loop"
+msgstr ""
+
+#: src/input.c:1379
+msgid ""
+"command data card error: Unexpected EOF while reading input file - appending "
+"EN card\n"
+msgstr ""
+
+#: src/input.c:1380
+msgid ""
+"Command data card error\n"
+"Unexpected EOF while reading input file\n"
+"Appending a default EN card"
+msgstr ""
+
+#: src/input.c:1394
+msgid "command data card error: card's mnemonic code too short or missing\n"
+msgstr ""
+
+#: src/input.c:1395
+msgid ""
+"Command data card error\n"
+"Mnemonic code too short or missing"
+msgstr ""
+
+#: src/input.c:1438
+#, c-format
+msgid "command data card \"%s\" error: Spurious character '%c' at column %d\n"
+msgstr ""
+
+#: src/input.c:1440
+msgid ""
+"Command data card error\n"
+"Spurious character in command card"
+msgstr ""
+
+#: src/input.c:1538
+msgid ""
+"geometry data card error: Unexpected EOF while reading input file - "
+"appending GE card\n"
+msgstr ""
+
+#: src/input.c:1539
+msgid ""
+"Geometry data card error\n"
+"Unexpected EOF while reading input file\n"
+"Appending a default GE card"
+msgstr ""
+
+#: src/input.c:1553
+msgid "geometry data card error: card's mnemonic code too short or missing\n"
+msgstr ""
+
+#: src/input.c:1554
+msgid ""
+"Geometry data card error\n"
+"Card's mnemonic code too short or missing"
+msgstr ""
+
+#: src/input.c:1598
+#, c-format
+msgid "geometry data card \"%s\" error: Spurious character '%c' at column %d\n"
+msgstr ""
+
+#: src/input.c:1600
+msgid ""
+"Geometry data card error\n"
+"Spurious character in command card"
+msgstr ""
+
+#: src/interface.c:39
+#, c-format
+msgid "failed to add objects to builder: %s\n"
+msgstr ""
+
+#: src/interface.c:41
+msgid "Listing Object Ids:\n"
+msgstr ""
+
+#: src/interface.c:45 src/utils.c:99
+#, c-format
+msgid "%s\n"
+msgstr ""
+
+#: src/interface.c:55
+msgid "lib gmodule not supported\n"
+msgstr ""
+
+#: src/interface.c:74
+#, c-format
+msgid "builder failed to get named object: %s\n"
+msgstr ""
+
+#: src/main.c:97
+msgid "Xnec2c Optimize"
+msgstr ""
+
+#: src/main.c:98
+msgid ""
+"Frequency plots window is not configured. Select your desired graphs and "
+"click the triangle \"Play\" button."
+msgstr ""
+
+#: src/main.c:174
+#, c-format
+msgid "input file name too long ( > %d char )\n"
+msgstr ""
+
+#: src/main.c:200
+msgid "Forking disabled!\n"
+msgstr ""
+
+#: src/main.c:208
+msgid "pthread freqloop disabled!\n"
+msgstr ""
+
+#: src/main.c:212
+msgid "batch mode enabled, will exit after first loop\n"
+msgstr ""
+
+#: src/main.c:257
+msgid "--batch and --optimize are mutual exclusive.\n"
+msgstr ""
+
+#: src/main.c:273
+#, c-format
+msgid "input file path name too long ( > %d char )\n"
+msgstr ""
+
+#: src/main.c:280
+#, c-format
+msgid "unexpected argument '%s' does not appear to be a .nec file\n"
+msgstr ""
+
+#: src/main.c:287
+#, c-format
+msgid "unexpected argument: %s\n"
+msgstr ""
+
+#: src/main.c:293
+msgid "batch mode requires an input file\n"
+msgstr ""
+
+#: src/main.c:322 src/main.c:330
+msgid "exiting after fatal error: pipe() failed"
+msgstr ""
+
+#: src/main.c:339
+msgid "exiting after fatal error: fork() failed"
+msgstr ""
+
+#: src/main.c:681
+msgid "exiting via user interrupt\n"
+msgstr ""
+
+#: src/main.c:685
+msgid "segmentation fault, exiting\n"
+msgstr ""
+
+#: src/main.c:689
+msgid "floating point exception, exiting\n"
+msgstr ""
+
+#: src/main.c:693
+msgid "abort signal received, exiting\n"
+msgstr ""
+
+#: src/main.c:697
+msgid "termination request received, exiting\n"
+msgstr ""
+
+#: src/main.c:707
+#, c-format
+msgid "not forked, ignoring SIGCHLD from pid %d\n"
+msgstr ""
+
+#: src/main.c:715
+#, c-format
+msgid "child process pid %d exited\n"
+msgstr ""
+
+#: src/main.c:724
+#, c-format
+msgid "default exit with signal: %d\n"
+msgstr ""
+
+#: src/mathlib.c:132
+msgid "open_mathlib: lib is NULL\n"
+msgstr ""
+
+#: src/mathlib.c:142
+#, c-format
+msgid "setenv(%s, %s): %s\n"
+msgstr ""
+
+#: src/mathlib.c:156 src/utils.c:428
+#, c-format
+msgid "%s: %s\n"
+msgstr ""
+
+#: src/mathlib.c:161
+#, c-format
+msgid "%s: opened %s\n"
+msgstr ""
+
+#: src/mathlib.c:169
+#, c-format
+msgid "%s: library not found or nonfunctional, skipping: %s\n"
+msgstr ""
+
+#: src/mathlib.c:194
+#, c-format
+msgid "  %s: unable to bind %s: %s\n"
+msgstr ""
+
+#: src/mathlib.c:229
+#, c-format
+msgid "%s: loaded\n"
+msgstr ""
+
+#: src/mathlib.c:265
+#, c-format
+msgid "mathlib_idx out of range, clamping to zero: 0 !< %d !< %d\n"
+msgstr ""
+
+#: src/mathlib.c:272
+#, c-format
+msgid "mathlib_batch_idx out of range, clamping to zero: 0 !< %d !< %d\n"
+msgstr ""
+
+#: src/mathlib.c:280
+#, c-format
+msgid "%s was not detected: Unable to set the mathlib index to %d\n"
+msgstr ""
+
+#: src/mathlib.c:317
+msgid "set_mathlib_interactive: lib == NULL\n"
+msgstr ""
+
+#: src/mathlib.c:326
+#, c-format
+msgid "set_mathlib_interactive[%d]: mathlib.available=0, skipping: %s\n"
+msgstr ""
+
+#: src/mathlib.c:352
+msgid ""
+"mathlib: You cannot change the math library while the freq loop is running."
+msgstr ""
+
+#: src/mathlib.c:365
+msgid "set_mathlib_batch: lib == NULL\n"
+msgstr ""
+
+#: src/mathlib.c:370
+msgid "Batch Math Library"
+msgstr ""
+
+#: src/mathlib.c:371
+msgid ""
+"Selecting a batched math library has no effect unless -j is specified on the "
+"command line. (However, this selection will be saved for next time xnec2c is "
+"opened.)\n"
+msgstr ""
+
+#: src/mathlib.c:411
+#, c-format
+msgid "%s: benchmark=%d\n"
+msgstr ""
+
+#: src/mathlib.c:480
+msgid "Mathlib Help"
+msgstr ""
+
+#: src/mathlib.c:519
+msgid "Mathlib Benchmark Help"
+msgstr ""
+
+#: src/mathlib.c:521
+msgid ""
+"Jobs are forked and run in parallel by xnec2c, whereas threads are used by "
+"the mathlib implementation to parallelize the linear algebra calculation of "
+"one job.  For parallel algorithms you can reduce the number of threads in "
+"use by the algorithm with the following environment variables:\n"
+"  * OPENBLAS_NUM_THREADS=N\t# OpenBLAS thread limit\n"
+"  * OMP_NUM_THREADS=N\t\t# OpenMP thread limit\n"
+"  * MKL_NUM_THREADS=N\t\t# Intel MKL thread limit\n"
+"\n"
+"Each benchmark specifies a complexity to indicate approximately how long it "
+"will take to run.  For example, O(N) means the time will scale with N and "
+"O(N*J) means it will scale with N*J:\n"
+"  * N is the number of mathlibs selected here:\n"
+"      File->Mathlib Benchmarks->Selected Mathlibs\n"
+"  * J is the number of jobs specified on the command line with -j (eg, -j "
+"8)\n"
+"\n"
+"Higher complexity options run more benchmarks to provide additional "
+"information about how you might optimize your xnec2c runtime.  The benchmark "
+"menu options are as follows:  \n"
+"\n"
+"* Parallel (-j N): O(N/J) time: Benchmark each mathlib in parallel with the "
+"number of jobs specified on the command line with -j.\n"
+"\n"
+"* Single Job (-j 1): O(N) time: Benchmark each mathlib with a single job "
+"even if -j was specified on the command line. This is useful to find the "
+"fastest interactive mathlib that is used when the frequency is changed in "
+"the UI by changing a Frequency MHz +/- widget or (right-)clicking on the "
+"frequency plot\n"
+"\n"
+"* Iterate -j N/=2: O(N*log2(J)) time: Benchmark each mathlib in parallel "
+"initially with the number of jobs specified on the command line with -j, and "
+"then reduce the number jobs by half for each subsequent iteration until only "
+"one job remains.  This is useful to find a balance between the number of "
+"parallel jobs specified by -j and the number of threads used by the linear "
+"algebra library as modified by the environment variables listed above.\n"
+"\n"
+"* Iterate -j N-=2: O(N*J) time: Same as -j N/=2 above, but instead decrement "
+"the number of jobs by 1.  This takes the longest to run.\n"
+msgstr ""
+
+#: src/mathlib.c:570 src/mathlib.c:588 src/mathlib.c:594 src/mathlib.c:716
+msgid "Mathlib Benchmark"
+msgstr ""
+
+#: src/mathlib.c:571
+msgid ""
+"Choosing a benchmark other than \"Single Job\" has no effect unless -j is "
+"specified on the command line."
+msgstr ""
+
+#: src/mathlib.c:589
+msgid "You must select at least one math library to benchmark"
+msgstr ""
+
+#: src/mathlib.c:595
+#, c-format
+msgid ""
+"This will run a frequency loop benchmark for each detected linear algebra "
+"library and then provide a summary.  It may take some time to complete "
+"depending on how big and how many frequencies your NEC2 will use. Detailed "
+"timing will be provided in the terminal.\n"
+"\n"
+"Notes:\n"
+"* Only one Intel MKL library can be tested without restarting xnec2c, so "
+"select which one you wishto benchmark before proceeding or it will choose "
+"the first in the list and skip the rest.\n"
+"\n"
+"* Thread congestion will occur for multi-threaded libraries when using the -"
+"j N option if there are not enough CPUs available to accommodate the forked "
+"processes in combination with library threads.  Consider reducing the value "
+"of -j N for benchmarking to find what library works best with a mix of "
+"forking and threading; you can use `top` to monitor your CPU usageand if it "
+"reaches 0% idle then you might consider reducing -j N.\n"
+"\n"
+"You may wish to experiment setting these environment variables:\n"
+"  * OPENBLAS_NUM_THREADS=N\t# OpenBLAS thread limit\n"
+"  * OMP_NUM_THREADS=N\t\t# OpenMP thread limit\n"
+"  * MKL_NUM_THREADS=N\t\t# Intel MKL thread limit\n"
+"\n"
+"Click OK to proceed, this dialog will close when complete."
+msgstr ""
+
+#: src/mathlib.c:652
+#, c-format
+msgid "Starting %s benchmark (-j %d)\n"
+msgstr ""
+
+#: src/mathlib.c:749
+#, c-format
+msgid "mathlib_lock_intel: Cannot find library for mathlib idx=%d\n"
+msgstr ""
+
+#: src/mathlib.c:760
+#, c-format
+msgid ""
+"\n"
+"* Notice: \"%s\" was selected, but you can only change to a\n"
+"* different Intel MKL threading library by restarting xnec2c.\n"
+"* \n"
+"* However, you may continue to select any other Linear Algebra library\n"
+"* without restart, including this same Intel MKL library.  All other\n"
+"* Intel MKL threading libraries are disabled until restart because of an \n"
+"* MKL limitation where the MKL threading library can only be dynamically\n"
+"* linked only once per runtime.\n"
+"* \n"
+"* See Intel's documentation on mkl_set_threading_layer() for more detail.\n"
+msgstr ""
+
+#: src/mathlib.c:828
+msgid "zgetrf: current_mathlib is NULL, this should never happen.\n"
+msgstr ""
+
+#: src/mathlib.c:852 src/mathlib.c:897
+#, c-format
+msgid "%s: unsupported mathlib type %d\n"
+msgstr ""
+
+#: src/mathlib.c:865
+msgid "zgetrs: current_mathlib is NULL, this should never happen.\n"
+msgstr ""
+
+#: src/mathlib.c:890
+#, c-format
+msgid "zgetrs warning: lda(%d) != ldb(%d)\n"
+msgstr ""
+
+#: src/mathlib.c:925
+#, c-format
+msgid "dlsym(mkl_set_threading_layer): %s\n"
+msgstr ""
+
+#: src/matrix.c:1220
+#, c-format
+msgid "pivot(%d)= %16.8E\n"
+msgstr ""
+
+#: src/matrix.c:1254
+#, c-format
+msgid "LU Decomposition Failed: %d\n"
+msgstr ""
+
+#: src/matrix.c:1310
+#, c-format
+msgid "symmetry error - nrow:%d ncol:%d\n"
+msgstr ""
+
+#: src/matrix.c:1311
+msgid "Symmetry error"
+msgstr ""
+
+#: src/matrix.c:1418
+#, c-format
+msgid "Solving Failed: %d\n"
+msgstr ""
+
+#: src/measurements.c:95
+#, c-format
+msgid ""
+"BUG: invalid mgidx=%d: idx=%d pol=%d fstep=%d last_step=%d freq_step=%d\n"
+msgstr ""
+
+#: src/measurements.c:98
+#, c-format
+msgid "BUG: save.fstep[%d]=%d FREQ_LOOP_STOP=%d\n"
+msgstr ""
+
+#: src/measurements.c:169
+#, c-format
+msgid "meas_name_idx: Invalid name with length=%d: %s\n"
+msgstr ""
+
+#: src/measurements.c:196
+msgid "meas_format: output overflow\n"
+msgstr ""
+
+#: src/nec2_model.c:70 src/nec2_model.c:74 src/nec2_model.c:78
+msgid "Card"
+msgstr ""
+
+#: src/nec2_model.c:148
+msgid "--- NEC2 Input File created or edited by "
+msgstr ""
+
+#: src/nec2_model.c:165
+msgid "--- End Comments ---"
+msgstr ""
+
+#: src/nec2_model.c:305
+msgid ""
+"List_Comments():\n"
+"Error reading input file\n"
+"Unexpected EOF (End of File)"
+msgstr ""
+
+#: src/nec2_model.c:312
+msgid ""
+"List_Comments():\n"
+"Error reading input file\n"
+"Comment mnemonic short or missing"
+msgstr ""
+
+#: src/nec2_model.c:578
+msgid "End Comments"
+msgstr ""
+
+#: src/nec2_model.c:609
+msgid ""
+"Cannot save treeview data\n"
+"Please use the Save button\n"
+"to specify a file path"
+msgstr ""
+
+#: src/network.c:648
+#, c-format
+msgid "improper load type chosen, requested type is %d\n"
+msgstr ""
+
+#: src/network.c:649
+msgid "Improper load type chose"
+msgstr ""
+
+#: src/network.c:737
+#, c-format
+msgid "loading data card error, no segment has an itag = %d\n"
+msgstr ""
+
+#: src/network.c:738
+msgid ""
+"Loading data card\n"
+"Tag number mismatch error"
+msgstr ""
+
+#: src/optimize.c:86
+msgid "xnec2c was built without inotify.\n"
+msgstr ""
+
+#: src/optimize.c:111
+#, c-format
+msgid "Unable to configure file modification detection to %s: %s\n"
+msgstr ""
+
+#: src/optimize.c:116
+#, c-format
+msgid "Monitoring rc_config.input_file: %s\n"
+msgstr ""
+
+#: src/optimize.c:158
+msgid "Exited optimizer thread.\n"
+msgstr ""
+
+#: src/optimize.c:164
+msgid "optimize.c: exit because this is a child process.\n"
+msgstr ""
+
+#: src/optimize.c:200
+#, c-format
+msgid "%d child jobs are running, skipping optimization\n"
+msgstr ""
+
+#: src/optimize.c:220
+#, c-format
+msgid "%s: file is zero bytes, retrying (%s)\n"
+msgstr ""
+
+#: src/plot_freqdata.c:132
+#, c-format
+msgid ""
+"fr_plot_sync_widths, current == NULL: calc_data.FR_cards=%d calc_data."
+"ngraph=%d fr=%d posn=%d valid=%d\n"
+msgstr ""
+
+#: src/plot_freqdata.c:148
+#, c-format
+msgid ""
+"fr_plot[posn=%d fr=%d] rect[x=%d y=%d, w=%d h=%d] freq[min=%4.2f max=%4.2f "
+"n=%d]\n"
+msgstr ""
+
+#: src/plot_freqdata.c:788 src/plot_freqdata.c:1241
+msgid "memory allocation for points failed\n"
+msgstr ""
+
+#: src/plot_freqdata.c:789 src/plot_freqdata.c:1242
+msgid "Draw_Graph():Memory allocation for points failed"
+msgstr ""
+
+#: src/plot_freqdata.c:1203
+msgid "Smith Chart"
+msgstr ""
+
+#: src/plot_freqdata.c:1395 src/plot_freqdata.c:1414 src/plot_freqdata.c:1439
+msgid "Raw Gain dBi"
+msgstr ""
+
+#: src/plot_freqdata.c:1398
+msgid "Max Gain & Net Gain vs Frequency"
+msgstr ""
+
+#: src/plot_freqdata.c:1399
+msgid "Net Gain dBi"
+msgstr ""
+
+#: src/plot_freqdata.c:1405 src/plot_freqdata.c:1415
+msgid "Max Gain & F/B Ratio vs Frequency"
+msgstr ""
+
+#: src/plot_freqdata.c:1416
+msgid "F/B Ratio dB"
+msgstr ""
+
+#: src/plot_freqdata.c:1425
+msgid "Rad Angle - deg"
+msgstr ""
+
+#: src/plot_freqdata.c:1426
+msgid "Max Gain Direction vs Frequency"
+msgstr ""
+
+#: src/plot_freqdata.c:1427
+msgid "Phi - deg"
+msgstr ""
+
+#: src/plot_freqdata.c:1440
+msgid "Gain in Viewer Direction vs Frequency"
+msgstr ""
+
+#: src/plot_freqdata.c:1463
+msgid "Net gain dBi"
+msgstr ""
+
+#: src/plot_freqdata.c:1484
+msgid "VSWR & S11 vs Frequency"
+msgstr ""
+
+#: src/plot_freqdata.c:1485
+msgid "S11 dB"
+msgstr ""
+
+#: src/plot_freqdata.c:1489
+msgid "VSWR vs Frequency"
+msgstr ""
+
+#: src/plot_freqdata.c:1503
+msgid "memory allocation for vswr/s11 failed\n"
+msgstr ""
+
+#: src/plot_freqdata.c:1504
+msgid "Plot_Frequency_Data():Memory allocation for vswr/s11 failed"
+msgstr ""
+
+#: src/plot_freqdata.c:1535 src/plot_freqdata.c:1548
+msgid "Impedance vs Frequency"
+msgstr ""
+
+#: src/plot_freqdata.c:1547
+msgid "Z-magn"
+msgstr ""
+
+#: src/plot_freqdata.c:1549
+msgid "Z-phase"
+msgstr ""
+
+#: src/plot_freqdata.c:1799
+#, c-format
+msgid "mouse button: unknown button %d\n"
+msgstr ""
+
+#: src/radiation.c:656
+msgid ""
+"Theta > 90 deg with ground specified: Please check RP card data and correct\n"
+msgstr ""
+
+#: src/rc_config.c:206
+#, c-format
+msgid "unable to getcwd(): %s\n"
+msgstr ""
+
+#: src/rc_config.c:210
+#, c-format
+msgid "environment variable HOME is undefined, using %s\n"
+msgstr ""
+
+#: src/rc_config.c:294
+#, c-format
+msgid ""
+"%s (locale=%s): only matchd %d of %lu chars, trying another locale: %s\n"
+msgstr ""
+
+#: src/rc_config.c:361
+#, c-format
+msgid "match: %s\n"
+msgstr ""
+
+#: src/rc_config.c:422
+#, c-format
+msgid "%s: EOF reading application version.\n"
+msgstr ""
+
+#: src/rc_config.c:428
+#, c-format
+msgid "existing config file version differs: %s != %s\n"
+msgstr ""
+
+#: src/rc_config.c:668
+#, c-format
+msgid ""
+"Fixed %s directory permissions from 0%o to 0%o from bug introduced in "
+"4e62893b.\n"
+msgstr ""
+
+#: src/rc_config.c:701
+#, c-format
+msgid "%s:%d: Line not parsed: %s\n"
+msgstr ""
+
+#: src/rc_config.c:707
+#, c-format
+msgid "%s:%d: Early end of file for %s: %s \n"
+msgstr ""
+
+#: src/rc_config.c:732
+#, c-format
+msgid "%s:%d: parse error (%s): %s \n"
+msgstr ""
+
+#: src/rc_config.c:972
+#, c-format
+msgid "cannot open xnec2c's config file: %s\n"
+msgstr ""
+
+#: src/somnec.c:238
+msgid "Hankel not valid for z = 0\n"
+msgstr ""
+
+#: src/somnec.c:239
+msgid "Hankel not valid for z = 0"
+msgstr ""
+
+#: src/somnec.c:750
+msgid "No convergence\n"
+msgstr ""
+
+#: src/somnec.c:751
+msgid "No convergencn"
+msgstr ""
+
+#: src/utils.c:77
+#, c-format
+msgid ""
+"\n"
+"=== Notice: %s ===\n"
+"%s\n"
+"\n"
+msgstr ""
+
+#: src/utils.c:95
+#, c-format
+msgid "Stop: %s\n"
+msgstr ""
+
+#: src/utils.c:102
+#, c-format
+msgid "child process %d exiting\n"
+msgstr ""
+
+#: src/utils.c:291
+#, c-format
+msgid ""
+"mem_obj_t at %p:\n"
+"  size: %lu\n"
+"  used: %lu\n"
+"  addr: %p\n"
+msgstr ""
+
+#: src/utils.c:310
+#, c-format
+msgid "mem_backtrace(%p):\n"
+msgstr ""
+
+#: src/utils.c:312
+msgid "  m->backtrace is null, no backtrace data\n"
+msgstr ""
+
+#: src/utils.c:376
+#, c-format
+msgid "Memory re-allocation denied %s\n"
+msgstr ""
+
+#: src/utils.c:377
+#, c-format
+msgid "%s: Memory requested %lu\n"
+msgstr ""
+
+#: src/utils.c:423
+#, c-format
+msgid "xnec2c[%d]: %s: Failed to open file: %s\n"
+msgstr ""
+
+#: src/utils.c:778
+msgid "Optimizer loop incomplete, skipping radiation pattern redraw.\n"
+msgstr ""
+
+#: src/utils.c:793
+msgid "  Backtrace:\n"
+msgstr ""
+
+#: src/utils.c:795
+#, c-format
+msgid "    %d. %s\n"
+msgstr ""
+
+#: src/utils.c:822
+#, c-format
+msgid "%s:\n"
+msgstr ""
+
+#: src/xnec2c.c:185
+#, c-format
+msgid ""
+"complex dielectric constant from file: %12.5E%+12.5Ej, requested: "
+"%12.5E%+12.5Ej\n"
+msgstr ""
+
+#: src/xnec2c.c:188
+msgid "Ground_Parameters():Error in ground parameters"
+msgstr ""
+
+#: src/xnec2c.c:490
+#, c-format
+msgid "%.6f MHz: %f seconds. (%s)\n"
+msgstr ""
+
+#: src/xnec2c.c:811
+#, c-format
+msgid ""
+"Frequency_Loop is done with all steps but num_busy_procs=%d (calc_data."
+"freq_step=%d calc_data.steps_total=%d)?\n"
+msgstr ""
+
+#: src/xnec2c.c:818
+#, c-format
+msgid "  busy job[%d]: fstep=%d freq=%f\n"
+msgstr ""
+
+#: src/xnec2c.c:880
+#, c-format
+msgid "Frequency loop elapsed time: %f seconds. (%s)\n"
+msgstr ""
+
+#: src/xnec2c.c:1019
+msgid "failed to start Frequency_Loop_Thread\n"
+msgstr ""
+
+#. TRANSLATORS: This is just the abstract word "yes" to test the
+#. * translation framework with a few selected locales like C,
+#. * en_US.UTF-8, de_DE.UTF-8.
+#: t/i18n-test.c:16
+msgid "yes"
+msgstr "ja"
