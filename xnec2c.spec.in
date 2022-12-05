@@ -133,6 +133,8 @@ features.
 EOF
 %endif
 
+%find_lang %{name}
+
 
 %if 0%{?rhel} && 0%{?rhel} <= 7
 %post
@@ -155,7 +157,7 @@ update-desktop-database &> /dev/null || :
 %endif
 
 
-%files
+%files -f %{name}.lang
 %doc %{_datadir}/doc/%{name}
 %license COPYING
 %{_bindir}/*
